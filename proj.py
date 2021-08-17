@@ -19,7 +19,6 @@ def get_image_list_from_pdf(self,pdf_file):
         print('Total of %d jpgs produced after converting the pdf file: %s'%(len(image_list),pdf_file))
         return image_list
  
- 
 def call_convert(self,src,dest):
     #Call convert to convert pdf to jpg
     print('About to call convert on %s'%src)
