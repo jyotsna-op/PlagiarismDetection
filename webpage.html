@@ -1,0 +1,570 @@
+
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=nh6Y130DomHINn323DK-Su537OnEBot5xcx4BN7wQole_K0YasRG8_TG0rAtV44QoVr6PV1urTVVVRwZWDDrcA" charset="UTF-8"></script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer>var __ez=__ez||{};__ez.stms=Date.now(),__ez.evt={},__ez.script={},__ez.ck=__ez.ck||{},__ez.template={},__ez.template.isOrig=!1,__ez.queue=function(){var k=0,t=0,b=[],j=!1,h=[],d=[],i=!0,e={func:function(e,k,f,g,h,i,j){var d=this;this.name=e,this.funcName=k,this.parameters=f===null?null:f instanceof Array?f:[f],this.isBlock=g,this.blockedBy=h,this.deleteWhenComplete=i,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=j,this.isTimeDelay=!1,this.process=function(){var f,g;a("... func = "+e),d.isInitialized=!0,d.isComplete=!0,a("... func.apply: "+e),f=d.funcName.split('.'),g=null,f.length>3||(f.length===3?g=window[f[0]][f[1]][f[2]]:f.length===2?g=window[f[0]][f[1]]:g=window[d.funcName]),typeof g!='undefined'&&g!==null&&g.apply(null,this.parameters),d.deleteWhenComplete===!0&&delete b[e],d.isBlock===!0&&(a("----- F'D: "+d.name),c())}},file:function(d,g,h,i,e,f,j){var b=this;this.name=d,this.path=g,this.async=e,this.defer=f,this.isBlock=h,this.blockedBy=i,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=j,this.isTimeDelay=!1,this.process=function(){b.isInitialized=!0,a("... file = "+d);var h=document.createElement('script');h.src=g,e===!0?h.async=!0:f===!0&&(h.defer=!0),h.onerror=function(){a("----- ERR'D: "+b.name),b.isError=!0,b.isBlock===!0&&c()},h.onreadystatechange=h.onload=function(){var d=h.readyState;a("----- F'D: "+b.name),(!d||/loaded|complete/.test(d))&&(b.isComplete=!0,b.isBlock===!0&&c())},document.getElementsByTagName('head')[0].appendChild(h)}},fileLoaded:function(a,b){this.name=a,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=b,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}}};function s(){window.addEventListener("load",function(){setTimeout(function(){j=!0,a('TDELAY -----'),c()},5e3)},!1)}function p(a,g,n,i,j,k,l,m){var c=new e.file(a,g,n,i,j,k,l);m===!0?h[a]=c:d[a]=c,b[a]=c,f(c)}function u(a){i=a}function o(a,g,i,o,j,k,l,m,n){k===!0&&(a=a+"_"+t++);var c=new e.func(a,g,i,o,j,l,m);n===!0?h[a]=c:d[a]=c,b[a]=c,f(c)}function m(c,h){var g=new e.file(c,h,!1,[],!1,!1,!0);g.isTimeDelay=!0,a(c+' ... '+' FILE! TDELAY'),d[c]=g,b[c]=g,f(g)}function n(c,h,i){var g=new e.func(c,h,i,!1,[],!0,!0);g.isTimeDelay=!0,a(c+' ... '+' FUNCTION! TDELAY'),d[c]=g,b[c]=g,f(g)}function f(a){if(g(a)===!0||i==!1)return;a.process()}function g(c){var e,d;if(c.isTimeDelay===!0&&j===!1)return a(c.name+" blocked = TIME DELAY!"),!0;if(c.blockedBy instanceof Array)for(e=0;e<c.blockedBy.length;e++){if(d=c.blockedBy[e],b.hasOwnProperty(d)===!1)return a(c.name+" blocked = "+d),!0;if(c.proceedIfError===!0&&b[d].isError===!0)return!1;if(b[d].isComplete===!1)return a(c.name+" blocked = "+d),!0}return!1}function q(c){if(!c||0===c.length)return;if(c in b){var d=b[c];d.isComplete===!0?a(d.name+' '+c+': error loaded duplicate'):(d.isComplete=!0,d.isInitialized=!0)}else b[c]=new e.fileLoaded(c,!0);a("markLoaded dummyfile: "+b[c].name)}function r(){var a,c;for(a in b){if(b.hasOwnProperty(a)===!1)continue;c=b[a],g(c)}}function a(b){var c=window.location.href,d=new RegExp('[?&]ezq=([^&#]*)','i'),a=d.exec(c),e=a?a[1]:null;e==="1"&&console.debug(b)}function c(){if(k++,k>200)return;a("let's go"),l(h),l(d)}function l(c){var d,b;for(d in c){if(c.hasOwnProperty(d)===!1)continue;b=c[d],b.isComplete===!0||g(b)||b.isInitialized===!0||b.isError===!0?b.isError===!0?a(b.name+': error'):b.isComplete===!0?a(b.name+': complete already'):b.isInitialized===!0&&a(b.name+': initialized already'):b.process()}}return s(),{addFile:p,addDelayFile:m,addFunc:o,addDelayFunc:n,items:b,processAll:c,setallowLoad:u,markLoaded:q,logWhatsBlocked:r}}(),__ez.evt.add=function(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent?a.attachEvent("on"+b,c):a["on"+b]=c()},__ez.evt.remove=function(a,b,c){a.removeEventListener?a.removeEventListener(b,c,!1):a.detachEvent?a.detachEvent("on"+b,c):delete a["on"+b]},__ez.script.add=function(b){var a=document.createElement("script");a.src=b,a.async=!0,a.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(a)},__ez.dot={}</script>
+    <script>var __sellerid="1fd91e5dbbe7620d62483fca791f81ba",__ez_nid="1254144"</script>
+    <script>var ezasVars={cid:'8788909216',pid:'pub-5804869608558086'}</script>
+    <script>window.ezhbopt=!0</script>
+    <link rel="preload" as="script" href="//securepubads.g.doubleclick.net/tag/js/gpt.js">
+    <link href="//ad.doubleclick.net" rel="dns-prefetch">
+    <link href="//pagead2.googlesyndication.com" rel="dns-prefetch">
+    <link href="//googleads.g.doubleclick.net" rel="dns-prefetch">
+    <link href="//tpc.googlesyndication.com" rel="dns-prefetch">
+    <link href="//adservice.google.com" rel="dns-prefetch">
+    <link href="//secureads.g.doubleclick.net" rel="dns-prefetch">
+    <link href="//www.googletagservices.com" rel="dns-prefetch">
+    <link rel="preload" as="script" href="//go.ezodn.com/hb/dall.js?b=appnexus,ix,medianet,oftmedia,onetag,openx,pubmatic,pubmatic,pulsepoint,spotx&cb=195-2-27">
+    <script async src="//c.amazon-adsystem.com/aax2/apstag.js"></script>
+    <script data-cfasync="false" type="text/javascript" data-pagespeed-no-defer>var __ezaps=[{slotID:"div-gpt-ad-textcompare_org-box-2-0",slotName:"/1254144,22510906095/textcompare_org-box-2",sizes:[[300,250]]},{slotID:"div-gpt-ad-textcompare_org-box-2-0_1",slotName:"/1254144,22510906095/textcompare_org-box-2",sizes:[[300,250]]},{slotID:"div-gpt-ad-textcompare_org-box-2-0_2",slotName:"/1254144,22510906095/textcompare_org-box-2",sizes:[[300,250]]},{slotID:"div-gpt-ad-textcompare_org-medrectangle-2-0",slotName:"/1254144,22510906095/textcompare_org-medrectangle-2",sizes:[[728,90]]},{slotID:"div-gpt-ad-textcompare_org-box-4-0",slotName:"/1254144,22510906095/textcompare_org-box-4",sizes:[[580,400],[336,280],[300,250]]},{slotID:"div-gpt-ad-textcompare_org-medrectangle-1-0",slotName:"/1254144,22510906095/textcompare_org-medrectangle-1",sizes:[[250,250]]}],__ezapid="aa05931b-5308-4ea3-95a2-adf84f4ffde4",schain_domain;!function(a,b){if(b[a])return;function c(c,d){b[a]._Q.push([c,d])}b[a]={init:function(){c("i",arguments)},fetchBids:function(){c("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]}}("apstag",window),schain_domain='ezoic.ai',typeof __ez_nid!='undefined'&&__ez_nid==21732118914&&(schain_domain='ezoic.co.uk'),apstag.init({pubID:__ezapid,adServer:'googletag',schain:{complete:1,ver:'1.0',nodes:[{asi:schain_domain,sid:__sellerid,hp:1}]}});function getAmazonSlotById(d){var a,b,c;if(typeof __ezaps=='undefined')return;for(a=0;a<__ezaps.length;a++){if(b=__ezaps[a],typeof b=='undefined')continue;if(c=b.slotID,typeof c!='undefined'&&c==d)return b}return!1}function ezapsFetchBids(a){if(typeof a=='undefined'||a.length===0)return;apstag.fetchBids({slots:a,timeout:2e3},function(a){function c(d){var a,b,c;if(typeof window.ezslots=='undefined'||window.ezslots==0)return;for(a=0;a<window.ezslots.length;a++){if(b=window[ezslots[a]],typeof b=='undefined')continue;if(c=b.getSlotElementId(),typeof c!='undefined'&&c==d)return b}}function b(c){var b,d,e,a;if(typeof c=='undefined'||c.length==0)return;b=apstag.targetingKeys();for(d=0;d<c.length;d++){e=c[d];for(a=0;a<b.length;a++)b[a]in e&&ezSetSlotTargeting(e.slotID,b[a],e[b[a]])}}b(a)})}typeof __tcfapi!="undefined"||ezapsFetchBids(__ezaps)</script>
+    <script type="text/javascript">var __banger_pmp_deals=function(){var a={18:{DealId:18,Floor:25},1428:{DealId:1428,Floor:25},17:{DealId:17,Floor:160},19:{DealId:19,Floor:100},20:{DealId:20,Floor:300}};return[{SlotName:"/1254144,22510906095/textcompare_org-medrectangle-1",Deals:[a[18],a[1428]]},{SlotName:"/1254144,22510906095/textcompare_org-medrectangle-2",Deals:[a[17],a[18],a[19],a[1428]]},{SlotName:"/1254144,22510906095/textcompare_org-box-2",Deals:[a[17],a[18],a[19],a[20],a[1428]]},{SlotName:"/1254144,22510906095/textcompare_org-box-4",Deals:[a[18],a[19],a[1428]]},{SlotName:"/1254144,22510906095/textcompare_org-box-2",Deals:[a[17],a[18],a[19],a[20],a[1428]]},{SlotName:"/1254144,22510906095/textcompare_org-box-2",Deals:[a[17],a[18],a[19],a[20],a[1428]]}]}()</script>
+    <script type="text/javascript">_ebcids=[138231308856,138231308940,138231308949,138231387842,138231421744,138231421759,138231421774,138231421783,138231421789,138231421792,138242067587,138242067590,138242067602,138242067605,138242067608,138242067614,138242229406,138242229415,138242229421,138242229430]</script>
+    <script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type="text/javascript">ezobv=76</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type="text/javascript">var ezSlotKVStore,ez_queue,ezrpos,ez_current_interval,ez_current_load,__ez_fad_floatshowd,__ez_fad_initslot,__ez_fad_fastd,__ez_fad_fastdiv,__ez_fad_fastslots,__ez_fad_viewslots,__ez_fad_instaslots,ezslit_run,__ez_fad_divs,__ez_fad_divsd,__ez_fad_vw,__ez_fad_vh,__ez_fad_count,__ez_fad_haspo,__ez_fad_doc_ht,__ez_fad_vp_ht,__ez_fad_hascp;function ez_isclean(a){var b,c;return typeof a=='undefined'&&(a=document.URL),b=/(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))(@|%2540|%40)((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))/,c=!b.test(a),c}ezSlotKVStore={};function ezSetSlotTargeting(a,b,c){var d=ezGetSlotById(a);d?d.setTargeting(b,c):(typeof ezSlotKVStore[a]=='undefined'&&(ezSlotKVStore[a]={}),ezSlotKVStore[a][b]=c)}function ezGetSlotById(d){var a,b,c;if(typeof window.ezslots=='undefined'||window.ezslots==0)return;for(a=0;a<window.ezslots.length;a++){if(b=window[ezslots[a]],typeof b=='undefined')continue;if(c=b.getSlotElementId(),typeof c!='undefined'&&c==d)return b}}function ezSetTargetingFromMap(c,a){if(typeof c=='undefined')return;for(var b in a){if(!a.hasOwnProperty(b))continue;c.setTargeting(b,a[b])}}ez_queue=new Array;function sort_queue(a,b){return a.priority<b.priority?-1:a.priority==b.priority?0:1}function execute_ez_queue(){ez_queue.sort(sort_queue);for(var a in ez_queue)if(typeof ez_queue[a].method!="undefined")try{ez_queue[a].method.call(null)}catch(a){}}window.ez_ad_units=new Array,window.ezslots=new Array,window.ezsrqt={};function ez_write_tag(a){var b,c;return ez_isclean()&&a instanceof Array?typeof ezstandalone!='undefined'&&typeof ezstandalone.selectedPlaceholders!='undefined'&&ezstandalone.selectedPlaceholders[a[3]]===!0?"1+1":(ez_ad_units[ez_ad_units.length]=a,b="",typeof a[5]!='undefined'&&a[5]>0&&(b='_'+a[5]),c="googletag.cmd.push(function() {var divid = 'div-gpt-ad-"+a[1]+"-"+a[4]+""+b+"';if(typeof ezlrarn == 'function'){ezlrarn(divid);}googletag.display(divid);var to = 0;if("+a[2]+".getTargeting('ga')[0] == '0'){to = 500;}if((window.ezDisableInitialLoad==true || googletag.pubads().isInitialLoadDisabled()) && window.ezoll != true){setTimeout(function(){if(typeof window.adjustHbValues == 'function'){window.adjustHbValues("+a[2]+");}googletag.pubads().refresh(["+a[2]+"])},to);}});",c):"1+1"}function in_array(c,b){for(var d=b.length,a=0;a<d;a++)if(b[a]==c)return!0;return!1}ezrpos=new Array,ez_current_load=0;function __ez_fad_load(a,b){if(!__ez_fad_csnt()||!__ez_fad_rdy()||ezslit_run[a]===!0||typeof __ez_fad_divs[a]=='undefined'||__ez_fad_divs[a].length===0)return;if(ezslit_run[a]=!0,__ez_fad_gpt(),a>0&&a!==5&&__ez_fad_pb(),googletag.cmd.push(function(){for(var d=[],c=0,e;c<__ez_fad_divs[a].length;c++)__ez_fad_divsd.indexOf(__ez_fad_divs[a][c])==-1&&(__ez_fad_divsd.push(__ez_fad_divs[a][c]),d.push(__ez_fad_initslot[__ez_fad_divs[a][c]](b)),googletag.display(__ez_fad_divs[a][c]));e=[];for(i3=0;i3<d.length;i3++)typeof window.adjustHbValues=='function'&&window.adjustHbValues(window[d[i3]]),e.push(window[d[i3]]);googletag.pubads().refresh(e),setTimeout(__ez_fad_floatshow,0)}),a===0){if(document.readyState==="complete"){googletag.cmd.push(function(){__ez_fad_load(5,null)}),setTimeout(function(){__ez_fad_load(1,null),__ez_fad_load(5,null)},5500);return}document.addEventListener('DOMContentLoaded',function(a){googletag.cmd.push(function(){__ez_fad_load(5,null)}),setTimeout(function(){__ez_fad_load(1,null),__ez_fad_load(5,null)},5500)},!1)}}__ez_fad_floatshowd=!1;function __ez_fad_floatshow(c){var a,b;if(__ez_fad_floatshowd===!0||typeof __ez_fad_floating=='undefined')return;__ez_fad_floatshowd=!0,a=document.getElementById('ezmobfooter'),a!=null?a.classList.add('ezmobtrans'):(head=document.head||document.getElementsByTagName('head')[0],style=document.createElement('style'),head.appendChild(style),b="body > #ezmobfooter{bottom:0px !important;visibility:visible;}",style.type='text/css',style.styleSheet?style.styleSheet.cssText=b:style.appendChild(document.createTextNode(b))),googletag.cmd.push(function(){for(var a=0,b;a<__ez_fad_floating.length;a++)b=__ez_fad_initslot[__ez_fad_floating[a]](null),googletag.display(__ez_fad_floating[a]),typeof window.adjustHbValues=='function'&&window.adjustHbValues(window[b]),googletag.pubads().refresh([window[b]])})}__ez_fad_initslot={},__ez_fad_fastd=[],__ez_fad_fastdiv=[],__ez_fad_fastslots=[],__ez_fad_viewslots=[],__ez_fad_instaslots=[],ezslit_run=[],__ez_fad_divs=[[],[],[],[],[],[],[]],__ez_fad_divpos={},__ez_fad_divsd=[],__ez_fad_vw=window.screen.width,__ez_fad_vh=window.screen.height,__ez_fad_count=0;function __ez_fad_invisible(a){!!(a.offsetWidth||a.offsetHeight||a.getClientRects().length)}function __ez_fad_position(a){var d=document.getElementById(a),b,f,c,e;d!=null&&(b=d.getBoundingClientRect(),f=window.scrollY||document.body.scrollTop||document.documentElement.scrollTop,c=f+__ez_fad_vh,_ez_fad_vw=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,__ez_fad_vh=window.innerHeight||Math.max(document.documentElement.clientHeight,document.body.clientHeight),e=800,__ez_fad_vw<1200&&(e=__ez_fad_vh*1.25,c+=0),__ez_fad_floating.indexOf(a)==-1&&(__ez_fad_divpos[a]=b.top,__ez_fad_invisible(d)&&isFloat!=!0?__ez_fad_divs[4].push(a):b.top<c&&(ezslit_run[0]!=!0||ezslit_run[5]!=!0)?ezslit_run[0]!=!0?(__ez_fad_gpt(),__ez_fad_divs[0].push(a)):__ez_fad_divs[5].push(a):b.top<c+e&&ezslit_run[1]!=!0?(ezslit_run[0]!=!0&&__ez_fad_load(0,0),__ez_fad_divs[1].push(a)):b.top<c+e+__ez_fad_vh&&ezslit_run[2]!=!0?(ezslit_run[0]!=!0&&__ez_fad_load(0,0),__ez_fad_divs[2].push(a)):__ez_fad_divs[3].push(a),__ez_fad_count++))}function __ez_fad_fast(a,b,c){__ez_fad_fastd.indexOf(a)==-1&&(__ez_fad_fastd.push(a),googletag.cmd.push(function(){var e='empty',d=0,f;typeof ezoibfh[b]!='undefined'&&(e=ezoibfh[b],d=b),typeof window['ezslot_'+a]!='undefined'&&(f=parseInt(window['ezslot_'+a].getTargeting('br1')[0]),(isNaN(f)||d<f)&&(window['ezslot_'+a].setTargeting('br1',d).setTargeting('eb_br',e),c!=null&&window['ezslot_'+a].setTargeting('bvr',c)))}))}function __ez_fad_csnt(){return document.cookie.indexOf('ezCMPCookieConsent')!==-1||typeof __ez_conestreq=='undefined'}__ez_fad_haspo=!1,typeof PerformanceObserver!='undefined'&&typeof PerformanceObserver.supportedEntryTypes!='undefined'&&PerformanceObserver.supportedEntryTypes.indexOf('largest-contentful-paint')>-1&&(__ez_fad_haspo=!0);function __ez_fad_rdy(){return!!(document.body!==null&&(__ez_fad_haspo==!1&&__ez_fad_doc_ht>__ez_fad_vp_ht||__ez_fad_hascp)||document.readyState==="complete")||(__ez_fad_doc_ht=__ez_fad_docht(),__ez_fad_vp_ht=__ez_fad_vpht(),!1)}function __ez_fad_docht(){return typeof document.body!='undefined'&&document.body!=null?Math.max(document.body.scrollHeight,document.body.offsetHeight):typeof document.documentElement!='undefined'?Math.max(document.documentElement.clientHeight,document.documentElement.scrollHeight,document.documentElement.offsetHeight):0}function __ez_fad_vpht(){return typeof window.innerHeight!='undefined'?window.innerHeight:typeof document.body!='undefined'&&document.body!=null?document.body.clientHeight:typeof document.documentElement!='undefined'?document.documentElement.clientHeight:0}__ez_fad_doc_ht=__ez_fad_docht(),__ez_fad_vp_ht=__ez_fad_vpht(),__ez_fad_hascp=!1;try{const a=new PerformanceObserver(a=>{__ez_fad_hascp=!0});a.observe({type:'largest-contentful-paint',buffered:!0})}catch(a){}</script><script type="text/javascript" data-ezscrex="false">var ezorbf=[]</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type="text/javascript">window.isEZABL=!1,window.ezmadspc=300,window.ezoViewCheck=!1</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type="text/javascript">window.ezDisableInitialLoad=!1</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type="text/javascript">window.googletag=window.googletag||{},googletag.cmd=googletag.cmd||[]</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type="text/javascript">(function(){var a=document.createElement('script'),c,b;a.async=!0,a.type='text/javascript',c='https:'==document.location.protocol,a.src=(c?'https:':'http:')+'//securepubads.g.doubleclick.net/tag/js/gpt.js',b=document.getElementsByTagName('script')[0],b.parentNode.insertBefore(a,b)})()</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer type="text/javascript">var ezoibfh,ezaxmns,ezaucmns,__ez_fad_floating,__ez_fad_gptd,__ez_fad_ezpbinitd;window.ezogetbrkey=function(a){var b='br1',c='eb_br';window.ezogtk==""?(b='br1u',c='eb_bru'):window.ezogtk!="NT"&&(b='br1t',c='eb_brt'),a.setTargeting('br1',a.getTargeting(b)),a.setTargeting('eb_br',a.getTargeting(c))},googletag.cmd.push(function(){googletag.pubads().enableSingleRequest(),googletag.pubads().addEventListener('slotRenderEnded',function(a){__ez.queue.addFunc("ezbanger","ezbanger",a,!1,['banger.js'],!0,!0,!1,!0)}),googletag.pubads().addEventListener('impressionViewable',function(a){__ez.queue.addFunc("ezvb","ezvb",a,!1,['banger.js'],!0,!0,!1,!0)}),googletag.pubads().addEventListener('slotResponseReceived',function(a){__ez.queue.addFunc("ezsr","ezsr",a,!1,['banger.js'],!0,!0,!1,!0)}),googletag.pubads().addEventListener('slotRequested',function(a){window.ezsrqt[a.slot.getSlotElementId()]=Date.now()}),googletag.pubads().disableInitialLoad(),googletag.pubads().enableLazyLoad({fetchMarginPercent:400,renderMarginPercent:250,mobileScaling:2}),googletag.enableServices()}),window.ezoll=!1,window.ezoadxnc='1254144',window.ezoadhb='400',ezoibfh={0:'zero',1000000:'off',8500:'d5abc50791c030d76efa2ded02dcc115',6500:'b6ac10cddc8471927cec0144110502e9',2200:'2620dac3b050a8e36c132f49cccab5a1',200:'86802a923a1f32517e4c5d3b6d550271',3600:'81f896ad12450b2f0257b1df6d3f1edc',1500:'d81e229576f8cb8a43ff5c6a8e596727',850:'5297de5240aa45da173a0792747e0d26',800:'dc3573d5dc41abdf97751be02f53537f',90:'b355e9227b551c119a30a68852723b62',80:'dfa60cee6e1053fc0c9e607c8047bd28',18:'8de355ef1cf56b7da61277050d9957b1',9000:'e4c87a0c427c95c548a2ad50bc2fc99d',6000:'49d60519eec4f00cfb2d91dec1e48d41',3200:'41ad5c6ea7dab736638507e437e60604',2800:'a9ec56005762ef40746ec1b6d554f472',1200:'736e09a0771285737509ab8954c475a7',350:'9e0a1ce5b2455cb9b48d5df4c6bf4053',120:'58ef7bddb438af5e257c4377f32c243a',34:'a7a863b24978e69c4cdbb5a49be70d5e',5500:'b069a06daabd6e3043166f0e7a2edef4',4600:'d297138284357206d38c781a2291b99a',2100:'b2ac58e6c0c84fc65f344f47dd85768b',1100:'39abb99448d54704c4afa42efe76e15d',500:'5f2b94bb26a5aa9b1a00e66d30cfd5ec',180:'9ae587f95e95c876b7b76fd4c72a3838',32:'d31e71883d00099e275b6c5878eed023',30:'54d0fa6d5f6aabe7623cb24faa42a441',24:'e66c30deca31b19eda212eeca1258584',9500:'6fd3046d2172040882079eb07d0038c9',3800:'58e03b675175bbbec8566d319041c5ee',2900:'ef3231a19d034bff92faf99318a47a5f',2400:'6240c545bce1855c4e5a6ca430f526b1',60:'c352ba581bd3ffd8cea608cf2d55f519',38:'23b5ca1d9de2587e6a4ecfd33d61b709',28:'674294a1b21a1e89fc99c14c9b17be44',260:'57914c3716312cb7e954090f0717ea25',220:'43aa1607a0c08c74b14a9039e7b909b4',20:'7432360301409ae695ba255f16fbcf06',2700:'401612ca672af30f67eaf5e0989ce385',650:'5bac35e1a3b6adc56da706000a645484',46:'fe5b0c99ab7ba15f050582be1301303f',16:'e29f69dd468d31a5514dc9b5587ce757',8:'2e8b8c60843e52e5aaa1e3a52287a2bb',2600:'cc65d2d1fcda72df55233f97cf215dad',14:'ad0061a38dd7c6f7bcb692aee88dfda4',4000:'e95a0029a1c0d52e1f82ee010826e7d9',2000:'12a3b3570adcf20fd41a00445219acaa',1300:'bfa042bdb1583c959161b7823290dc1f',450:'6e85b37de1b1ffc2593baa5d6e4b02fc',140:'af063c244089b52ec5a0423a258f1f8e',2500:'78e9436ba8e29037bc31f94589331e0b',40:'ee685f77592ce296910ee91457d66ba3',36:'8c5ffefb122f59a66a8b7672d4452af2',10:'291d27313eb66c50243129b23df8a579',6:'33dd523f8e4dda158f0aa99686dda7f2',7000:'4552fb4beab2a055aec0d6113a8d9e42',4400:'a2de9c8773c426848d7815dff1d2d44f',1700:'ff69c327c284033fca821ae81630bfa9',240:'8de2c8ca79e8623e3cb37120a35ebaa2',160:'3530fcb6bcc13dc3c1712eaef7d92700',50:'3ba982fc4238dd4197b1d51b345478dc',8000:'e41b3739f340bda9dcfb30f79c9db1c9',3400:'2c0082dd1efc5e4dfdd4f50677fea822',2300:'a835e008e248a793da87524a4919f755',1400:'04b5efc3207e2390972f099a6a3c4757',900:'eeb0e32289ff31f9ddef18331038e5e9',100:'a495ce7dbb4cefcd3e0a722048894f41',4:'9c3e4ee8eae7f1433cb2fe69b1326605',10000:'f1e225445ec024e41bfd8ce2ba4aa91b',750:'6ac330e431a70c7d8ce9fb95aee95c72',300:'90c3c48d0172916d27c102ea4aa9d49c',22:'1e913e99b80640fd5b86a539e5b97c94',7500:'0de5c793b95df3adacbee8e14c308afc',1600:'6dbaa2f5e27e83e2fcd15988d9095988',700:'8b07bae800b215e481d05a271b3e723b',400:'76163170a8636ae5b88417f095893e08',42:'947f1d5169cc7d0f997560e34838fb04',26:'bf9a045b836005b6c23b7b0749249612',5000:'116f73d8738ced0c5546d5313109581e',4800:'f0459c7057d45e6fbbed62c0762b551e',3000:'92831edb305b955e915a7cc2288d5df6',1900:'65b2c11be72ed8610e2ac0304f3023a9',550:'26dfa00588543c52511429ade391f561',280:'c16fac08e79a971524b1c6834f5caad3',70:'527e52c10635ac8136a4c84094ee49a8',48:'8fc09e60bfd78aa82afac0405213359a',44:'a928cf2c3ad36f5e9ed2d90f655c1dc9',2:'b6c98a8bb15764f1c4ee331dcb724178',4200:'e9b52ed700c176b9b3f036aa176f3f3e',1800:'72c13a89ac876aaffdde39253459460b',1000:'c5429b6ddd929d0bc40a832a87789a7c',950:'c410f2a2b0c2123f4b6651cda6c5cf53',600:'45a351e981f435b4c20fafca8a5d741c',12:'14e8a85d4c42ff1db8790cbef9e33493'},ezaxmns={},ezaucmns={},ezaxmns["div-gpt-ad-textcompare_org-box-2-0"]=0,ezaucmns["div-gpt-ad-textcompare_org-box-2-0"]=0,ezaxmns["div-gpt-ad-textcompare_org-box-2-0_1"]=0,ezaucmns["div-gpt-ad-textcompare_org-box-2-0_1"]=0,ezaxmns["div-gpt-ad-textcompare_org-box-2-0_2"]=0,ezaucmns["div-gpt-ad-textcompare_org-box-2-0_2"]=0,ezaxmns["div-gpt-ad-textcompare_org-medrectangle-1-0"]=0,ezaucmns["div-gpt-ad-textcompare_org-medrectangle-1-0"]=0,ezaxmns["div-gpt-ad-textcompare_org-box-4-0"]=0,ezaucmns["div-gpt-ad-textcompare_org-box-4-0"]=0,ezaxmns["div-gpt-ad-textcompare_org-medrectangle-2-0"]=0,ezaucmns["div-gpt-ad-textcompare_org-medrectangle-2-0"]=0,__ez_fad_floating=['div-gpt-ad-textcompare_org-medrectangle-2-0'],__ez_fad_gptd=!1,__ez_fad_ezpbinitd=!1;function __ez_fad_gpt(){__ez_fad_gptd==!1&&(__ez_fad_gptd=!0,function(){var a=document.createElement('script'),c,b;a.async=!0,a.type='text/javascript',c='https:'==document.location.protocol,a.src=(c?'https:':'http:')+'//securepubads.g.doubleclick.net/tag/js/gpt.js',b=document.getElementsByTagName('script')[0],b.parentNode.insertBefore(a,b)}())}function __ez_fad_pb(){__ez_fad_ezpbinitd==!1&&typeof __ez_fad_ezpbinit=='function'&&(__ez_fad_ezpbinitd=!0,__ez_fad_ezpbinit())}__ez_fad_initslot['div-gpt-ad-textcompare_org-box-2-0']=function(a){return googletag.cmd.push(function(){var b='div-gpt-ad-textcompare_org-box-2-0',c;if(ezslot_0=googletag.defineSlot('/1254144,22510906095/textcompare_org-box-2',[300,250],'div-gpt-ad-textcompare_org-box-2-0').addService(googletag.pubads()).setCollapseEmptyDiv(!1),ezSetTargetingFromMap(ezslot_0,{a:'1',iid1:'224454746133537',eid:'224454746133537',t:'134',d:'200846',t1:'134',pvc:'2',ap:'1101',sap:'1101',a:'|3|',as:'revenue',plat:'1',bra:'mod11-c',ic:'1',at:'mbf',adr:'399',ezosn:'0',reft:'n',refs:'30',ga:'2497208',gala:'',rid:'99998',pt:'1',al:'1001',compid:'0',tap:'textcompare_org-box-2-224454746133537',eb_br:'76163170a8636ae5b88417f095893e08',eba:'1',ebss:[10017,10082,10061,10015,11304,11307],bv:'0',bvm:'2',bvr:'7',shp:'1',ftsn:'3',acptad:'1',br1:'400',br2:'200',ezoic:'1',nmau:'3',mau:'0',stl:[84,193,0,4,0,168,20,192,26,201,187,0],deal1:[21,22,23,24,25,26,27,28,29,760,761,815,816,817,818,893,899,919,774],ax_ssid:'10082'}),ezrpos[0]="0",ezslots.push("ezslot_0"),a!=null&&typeof __ez_fad_fastslots['div-gpt-ad-textcompare_org-box-2-0']=='function'&&__ez_fad_fastslots['div-gpt-ad-textcompare_org-box-2-0'](),typeof ezSlotKVStore!='undefined'&&typeof ezSlotKVStore[b]!='undefined'){for(c in ezSlotKVStore[b])ezSlotKVStore.hasOwnProperty(c)||ezSetSlotTargeting(b,c,ezSlotKVStore[b][c]);ezSlotKVStore[b]={}}}),"ezslot_0"},__ez_fad_fastslots['div-gpt-ad-textcompare_org-box-2-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-2-0'),__ez_fad_fast('0',400,null)},__ez_fad_viewslots['div-gpt-ad-textcompare_org-box-2-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-2-0'),__ez_fad_fast('0',400,null)},__ez_fad_instaslots['div-gpt-ad-textcompare_org-box-2-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-2-0'),__ez_fad_fast('0',0,0)},__ez_fad_initslot['div-gpt-ad-textcompare_org-box-2-0_1']=function(a){return googletag.cmd.push(function(){var b='div-gpt-ad-textcompare_org-box-2-0_1',c;if(ezslot_1=googletag.defineSlot('/1254144,22510906095/textcompare_org-box-2',[300,250],'div-gpt-ad-textcompare_org-box-2-0_1').addService(googletag.pubads()).setCollapseEmptyDiv(!1),ezSetTargetingFromMap(ezslot_1,{a:'1',iid1:'224454746133537',eid:'224454746133537',t:'134',d:'200846',t1:'134',pvc:'2',ap:'1101',sap:'1101',a:'|251|',as:'revenue',plat:'1',bra:'mod11-c',ic:'1',at:'mbf',adr:'399',ezosn:'1',reft:'n',refs:'30',ga:'2497208',gala:'',rid:'99998',pt:'1',al:'1001',compid:'0',tap:'textcompare_org-box-2-224454746133537',eb_br:'76163170a8636ae5b88417f095893e08',eba:'1',ebss:[10017,10082,10061,10015,11304,11307],bv:'0',bvm:'2',bvr:'7',shp:'1',ftsn:'3',acptad:'1',br1:'400',br2:'200',ezoic:'1',nmau:'3',mau:'1',stl:[34,168,0,34,0,193,132,20,71,30,192,31],deal1:[21,22,23,24,25,26,27,28,29,760,761,815,816,817,818,893,899,919,774],ax_ssid:'10082'}),ezrpos[1]="1",ezslots.push("ezslot_1"),a!=null&&typeof __ez_fad_fastslots['div-gpt-ad-textcompare_org-box-2-0_1']=='function'&&__ez_fad_fastslots['div-gpt-ad-textcompare_org-box-2-0_1'](),typeof ezSlotKVStore!='undefined'&&typeof ezSlotKVStore[b]!='undefined'){for(c in ezSlotKVStore[b])ezSlotKVStore.hasOwnProperty(c)||ezSetSlotTargeting(b,c,ezSlotKVStore[b][c]);ezSlotKVStore[b]={}}}),"ezslot_1"},__ez_fad_fastslots['div-gpt-ad-textcompare_org-box-2-0_1']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-2-0_1'),__ez_fad_fast('1',400,null)},__ez_fad_viewslots['div-gpt-ad-textcompare_org-box-2-0_1']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-2-0_1'),__ez_fad_fast('1',400,null)},__ez_fad_instaslots['div-gpt-ad-textcompare_org-box-2-0_1']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-2-0_1'),__ez_fad_fast('1',0,0)},__ez_fad_initslot['div-gpt-ad-textcompare_org-box-2-0_2']=function(a){return googletag.cmd.push(function(){var b='div-gpt-ad-textcompare_org-box-2-0_2',c;if(ezslot_2=googletag.defineSlot('/1254144,22510906095/textcompare_org-box-2',[300,250],'div-gpt-ad-textcompare_org-box-2-0_2').addService(googletag.pubads()).setCollapseEmptyDiv(!1),ezSetTargetingFromMap(ezslot_2,{a:'1',iid1:'224454746133537',eid:'224454746133537',t:'134',d:'200846',t1:'134',pvc:'2',ap:'1101',sap:'1101',a:'|3|',as:'revenue',plat:'1',bra:'mod11-c',ic:'1',at:'mbf',adr:'399',ezosn:'2',reft:'n',refs:'30',ga:'2497208',gala:'',rid:'99998',pt:'1',al:'1001',compid:'0',tap:'textcompare_org-box-2-224454746133537',eb_br:'76163170a8636ae5b88417f095893e08',eba:'1',ebss:[10017,10082,10061,10015,11304,11307],bv:'0',bvm:'2',bvr:'7',shp:'1',ftsn:'3',acptad:'1',br1:'400',br2:'200',ezoic:'1',nmau:'3',mau:'2',stl:[34,168,0,34,0,193,132,20,71,30,192,31],deal1:[21,22,23,24,25,26,27,28,29,760,761,815,816,817,818,893,899,919,774],ax_ssid:'10082'}),ezrpos[2]="2",ezslots.push("ezslot_2"),a!=null&&typeof __ez_fad_fastslots['div-gpt-ad-textcompare_org-box-2-0_2']=='function'&&__ez_fad_fastslots['div-gpt-ad-textcompare_org-box-2-0_2'](),typeof ezSlotKVStore!='undefined'&&typeof ezSlotKVStore[b]!='undefined'){for(c in ezSlotKVStore[b])ezSlotKVStore.hasOwnProperty(c)||ezSetSlotTargeting(b,c,ezSlotKVStore[b][c]);ezSlotKVStore[b]={}}}),"ezslot_2"},__ez_fad_fastslots['div-gpt-ad-textcompare_org-box-2-0_2']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-2-0_2'),__ez_fad_fast('2',400,null)},__ez_fad_viewslots['div-gpt-ad-textcompare_org-box-2-0_2']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-2-0_2'),__ez_fad_fast('2',400,null)},__ez_fad_instaslots['div-gpt-ad-textcompare_org-box-2-0_2']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-2-0_2'),__ez_fad_fast('2',0,0)},__ez_fad_initslot['div-gpt-ad-textcompare_org-medrectangle-1-0']=function(a){return googletag.cmd.push(function(){var b='div-gpt-ad-textcompare_org-medrectangle-1-0',c;if(ezslot_5=googletag.defineSlot('/1254144,22510906095/textcompare_org-medrectangle-1',[[250,250],[200,200],[180,150],[125,125],[234,60],[300,250],[320,50],[320,100],[120,240],[728,90],[468,60],[970,90],[970,250],['fluid']],'div-gpt-ad-textcompare_org-medrectangle-1-0').addService(googletag.pubads()).setCollapseEmptyDiv(!1),ezSetTargetingFromMap(ezslot_5,{a:'1',iid1:'5025532058161313',eid:'5025532058161313',t:'134',d:'200846',t1:'134',pvc:'2',ap:'1105',sap:'1105',a:'|6|',as:'revenue',plat:'1',bra:'mod11-c',ic:'1',at:'mbf',adr:'399',ezosn:'5',reft:'tf',refs:'30',ga:'2497208',gala:'',rid:'99998',pt:'4',al:'1004',compid:'0',tap:'textcompare_org-medrectangle-1-5025532058161313',eb_br:'c352ba581bd3ffd8cea608cf2d55f519',eba:'1',ebss:[10017,10082,10061,10015,11304,11307],bv:'0',bvm:'2',bvr:'1',shp:'1',ftsn:'3',acptad:'1',br1:'60',br2:'28',ezoic:'1',nmau:'0',mau:'0',stl:[77,193,0,4,0,168,20,192,71,201,187,0],deal1:[17,19,20,21,22,23,24,25,26,774],ax_ssid:'10082'}),ezrpos[5]="5",ezslots.push("ezslot_5"),a!=null&&typeof __ez_fad_fastslots['div-gpt-ad-textcompare_org-medrectangle-1-0']=='function'&&__ez_fad_fastslots['div-gpt-ad-textcompare_org-medrectangle-1-0'](),typeof ezSlotKVStore!='undefined'&&typeof ezSlotKVStore[b]!='undefined'){for(c in ezSlotKVStore[b])ezSlotKVStore.hasOwnProperty(c)||ezSetSlotTargeting(b,c,ezSlotKVStore[b][c]);ezSlotKVStore[b]={}}}),"ezslot_5"},__ez_fad_fastslots['div-gpt-ad-textcompare_org-medrectangle-1-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-medrectangle-1-0'),__ez_fad_fast('5',60,null)},__ez_fad_viewslots['div-gpt-ad-textcompare_org-medrectangle-1-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-medrectangle-1-0'),__ez_fad_fast('5',60,null)},__ez_fad_instaslots['div-gpt-ad-textcompare_org-medrectangle-1-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-medrectangle-1-0'),__ez_fad_fast('5',0,0)},__ez_fad_initslot['div-gpt-ad-textcompare_org-box-4-0']=function(a){return googletag.cmd.push(function(){var b='div-gpt-ad-textcompare_org-box-4-0',c;if(ezslot_4=googletag.defineSlot('/1254144,22510906095/textcompare_org-box-4',[[580,400],[728,90],[320,50],[468,60],[234,60],['fluid']],'div-gpt-ad-textcompare_org-box-4-0').addService(googletag.pubads()).setCollapseEmptyDiv(!1),ezSetTargetingFromMap(ezslot_4,{a:'1',iid1:'3742733588154781',eid:'3742733588154781',t:'134',d:'200846',t1:'134',pvc:'2',ap:'1106',sap:'1106',a:'|2|',as:'revenue',plat:'1',bra:'mod11-c',ic:'1',at:'mbf',adr:'399',ezosn:'4',reft:'tf',refs:'30',ga:'2497208',gala:'',rid:'99998',pt:'3',al:'1003',compid:'0',tap:'textcompare_org-box-4-3742733588154781',eb_br:'58ef7bddb438af5e257c4377f32c243a',eba:'1',ebss:[10017,10082,10061,10015,11304,11307],bv:'23',bvm:'0',bvr:'3',shp:'1',ftsn:'3',br1:'120',br2:'60',ezoic:'1',nmau:'0',mau:'0',stl:[77,193,0,4,0,168,20,192,26,201,192,0],deal1:[17,20,21,22,23,24,25,26,27,28,760,815,816,817,899,919,774],ax_ssid:'10082'}),ezrpos[4]="4",ezslots.push("ezslot_4"),a!=null&&typeof __ez_fad_fastslots['div-gpt-ad-textcompare_org-box-4-0']=='function'&&__ez_fad_fastslots['div-gpt-ad-textcompare_org-box-4-0'](),typeof ezSlotKVStore!='undefined'&&typeof ezSlotKVStore[b]!='undefined'){for(c in ezSlotKVStore[b])ezSlotKVStore.hasOwnProperty(c)||ezSetSlotTargeting(b,c,ezSlotKVStore[b][c]);ezSlotKVStore[b]={}}}),"ezslot_4"},__ez_fad_fastslots['div-gpt-ad-textcompare_org-box-4-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-4-0'),__ez_fad_fast('4',120,null)},__ez_fad_viewslots['div-gpt-ad-textcompare_org-box-4-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-4-0'),__ez_fad_fast('4',120,null)},__ez_fad_instaslots['div-gpt-ad-textcompare_org-box-4-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-box-4-0'),__ez_fad_fast('4',0,0)},__ez_fad_initslot['div-gpt-ad-textcompare_org-medrectangle-2-0']=function(a){return googletag.cmd.push(function(){var b='div-gpt-ad-textcompare_org-medrectangle-2-0',c;if(ezslot_3=googletag.defineSlot('/1254144,22510906095/textcompare_org-medrectangle-2',[728,90],'div-gpt-ad-textcompare_org-medrectangle-2-0').addService(googletag.pubads()).setCollapseEmptyDiv(!1),ezSetTargetingFromMap(ezslot_3,{a:'1',iid1:'2791550756166411',eid:'2791550756166411',t:'134',d:'200846',t1:'134',pvc:'2',ap:'1100',sap:'1100',a:'|2|',as:'revenue',plat:'1',bra:'mod11-c',ic:'1',at:'mbf',adr:'399',ezosn:'3',reft:'tf',refs:'30',ga:'2497208',gala:'',rid:'99998',pt:'5',al:'1005',compid:'0',tap:'textcompare_org-medrectangle-2-2791550756166411',eb_br:'57914c3716312cb7e954090f0717ea25',eba:'1',ebss:[10017,10082,10061,10015,11304,11307],bv:'12',bvm:'0',bvr:'2',shp:'1',ftsn:'3',br1:'260',br2:'140',ezoic:'1',nmau:'0',mau:'0',stl:[77,193,0,34,0,193,132,20,71,30,192,31],deal1:[20,21,22,23,24,25,26,27,28,29,30,760,761,813,814,815,816,817,818,819,893,899,903,917,918,919,774],ax_ssid:'10082'}),ezrpos[3]="3",ezslots.push("ezslot_3"),a!=null&&typeof __ez_fad_fastslots['div-gpt-ad-textcompare_org-medrectangle-2-0']=='function'&&__ez_fad_fastslots['div-gpt-ad-textcompare_org-medrectangle-2-0'](),typeof ezSlotKVStore!='undefined'&&typeof ezSlotKVStore[b]!='undefined'){for(c in ezSlotKVStore[b])ezSlotKVStore.hasOwnProperty(c)||ezSetSlotTargeting(b,c,ezSlotKVStore[b][c]);ezSlotKVStore[b]={}}}),"ezslot_3"},__ez_fad_fastslots['div-gpt-ad-textcompare_org-medrectangle-2-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-medrectangle-2-0'),__ez_fad_fast('3',260,null)},__ez_fad_viewslots['div-gpt-ad-textcompare_org-medrectangle-2-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-medrectangle-2-0'),__ez_fad_fast('3',260,null)},__ez_fad_instaslots['div-gpt-ad-textcompare_org-medrectangle-2-0']=function(){__ez_fad_fastdiv.push('div-gpt-ad-textcompare_org-medrectangle-2-0'),__ez_fad_fast('3',0,0)}</script>
+    <script type="text/javascript">(function(){function a(c){var a,b;try{return a=window[c],b='__storage_test__',a.setItem(b,b),a.removeItem(b),!0}catch(b){return b instanceof DOMException&&(b.code===22||b.code===1014||b.name==='QuotaExceededError'||b.name==='NS_ERROR_DOM_QUOTA_REACHED')&&a&&a.length!==0}}function b(){a('localStorage')&&localStorage.removeItem("google_ama_config")}b()})()</script>
+    <script data-ezscrex="false" data-cfasync="false">__ez.ssaf=[],__ez.sswp=4,__ez.ssv=69338,__ez.sshsdef=!1</script>
+    <script type="text/javascript">var ezoicTestActive=!0</script>
+    <script data-ezscrex="false" type="text/javascript" data-cfasync="false">var _ezaq={ad_cache_level:2,ad_count_adjustment:1,ad_lazyload_version:1,ad_load_version:1,ad_location_ids:"1,1,1,5,3,4",ad_transform_level:0,adx_ad_count:6,bidder_method:1,bidder_version:2,city:"Coimbatore",country:"IN",days_since_last_visit:0,display_ad_count:3,domain_id:200846,domain_test_group:20210305,ds_adsize_opt_id:-1,engaged_time_visit:27,ezcache_level:2,ezcache_skip_code:0,form_factor_id:1,framework_id:1,has_bad_image:0,has_bad_words:0,iab_category:"",iab_category_0:"596",is_from_recommended_pages:!1,is_return_visitor:!0,is_sitespeed:1,last_page_load:"1631859441081",last_pageview_id:"b1dd5dbd-2f46-4be8-5713-9626e21f9822",lt_cache_level:0,max_ads:9,metro_code:0,optimization_version:1,page_ad_positions:"1100,1101,1101,1101,1105,1106",page_view_count:2,page_view_id:"f0742981-fbda-49f6-5a2a-fa584d80830e",position_selection_id:39,postal_code:"641018",pv_event_count:0,response_size_orig:33537,response_time_orig:3,serverid:"65.0.107.9:15476",state:"TN",sub_page_ad_positions:"1100,1101,1101,1101,1105,1106",t_epoch:1631859475,template_id:134,time_on_site_visit:33,url:"https://www.textcompare.org/pdf/",user_id:0,word_count:1148,worst_bad_word_level:0},_ezim_d={"textcompare_org-box-2":{adsense_stat_source_id:5,adx_ad_count:6,adx_stat_source_id:35,full_id:"textcompare_org-box-2/2021-09-17/224454746133537",position_id:1101,sub_position_id:1101},"textcompare_org-box-2_1":{adsense_stat_source_id:5,adx_ad_count:6,adx_stat_source_id:35,full_id:"textcompare_org-box-2/2021-09-17/224454746133537",position_id:1101,sub_position_id:1101},"textcompare_org-box-2_2":{adsense_stat_source_id:5,adx_ad_count:6,adx_stat_source_id:35,full_id:"textcompare_org-box-2/2021-09-17/224454746133537",position_id:1101,sub_position_id:1101},"textcompare_org-box-4":{adsense_stat_source_id:5,adx_ad_count:6,adx_stat_source_id:35,full_id:"textcompare_org-box-4/2021-09-17/3742733588154781",height:"400",position_id:1106,sub_position_id:1106,width:"580"},"textcompare_org-medrectangle-1":{adsense_stat_source_id:5,adx_ad_count:6,adx_stat_source_id:35,full_id:"textcompare_org-medrectangle-1/2021-09-17/5025532058161313",height:"250",position_id:1105,sub_position_id:1105,width:"250"},"textcompare_org-medrectangle-2":{adsense_stat_source_id:5,adx_ad_count:6,adx_stat_source_id:35,full_id:"textcompare_org-medrectangle-2/2021-09-17/2791550756166411",height:"90",position_id:1100,sub_position_id:1100,width:"728"}},_ezat={domain_id:200846,form_factor_id:1,framework_id:1,pageview_date:"2021-09-17",pageview_id:"f0742981-fbda-49f6-5a2a-fa584d80830e",template_id:134,url:"https://www.textcompare.org/pdf/",visit_uuid:"0393670a-6c05-4088-7089-f08e7e8a07c5"}</script><script data-ezscrex="false" data-pagespeed-no-defer data-cfasync="false" type="text/javascript">__ez.queue.addFile('banger.js','/porpoiseant/banger.js?cb=195-2&bv=76&v=52&PageSpeed=off',!0,[],!0,!1,!1,!0)</script>
+    <script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer>__ez.vep=function(){var a=[],b="/detroitchicago/grapefruit.gif";function c(b,c){__ez.dot.isDefined(b)&&__ez.dot.isValid(c)&&a.push({type:'video',video_impression_id:b,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(c)})}function d(){var c,d,e;if(typeof document.visibilityState!='undefined'&&document.visibilityState==="prerender")return;if(__ez.dot.isDefined(a)&&a.length>0)while(a.length>0)c=5,c>a.length&&(c=a.length),d=a.splice(0,c),e=__ez.dot.getURL(b)+"?orig="+(__ez.template.isOrig===!0?1:0)+"&v="+btoa(JSON.stringify(d)),__ez.dot.Fire(e);a=[]}return{Add:c,Fire:d}}()</script><script data-ezscrex="false" data-cfasync="false" data-pagespeed-no-defer>__ez.pel=function(){var a=[],h="/porpoiseant/army.gif";function d(a,d){c(a,d,0,0,0,0,0),b()}function e(a,d){c(a,d,0,0,0,0,0,!0),b()}function f(){return a}function c(b,j,q,p,o,n,m,l){var k,d,g,h,f,e,c;if(!__ez.dot.isDefined(b)||__ez.dot.isAnyDefined(b.getSlotElementId,b.ElementId)==!1)return;k=parseInt(__ez.dot.getTargeting(b,'ap')),d=__ez.dot.getSlotIID(b),g=__ez.dot.getAdUnit(b,l),h=parseInt(__ez.dot.getTargeting(b,"compid")),f=0,e=0,c=i(b),typeof c=='object'&&(c.creative_id!==void 0&&(e=c.creative_id),c.line_item_id!==void 0&&(f=c.line_item_id)),__ez.dot.isDefined(d,g)&&__ez.dot.isValid(j)&&a.push({type:"impression",impression_id:d,domain_id:__ez.dot.getDID(),unit:g,t_epoch:__ez.dot.getEpoch(0),revenue:q,est_revenue:p,ad_position:k,ad_size:"",bid_floor_filled:o,bid_floor_prev:n,stat_source_id:m,country_code:__ez.dot.getCC(),pageview_id:__ez.dot.getPageviewId(),comp_id:h,line_item_id:f,creative_id:e,data:__ez.dot.dataToStr(j),is_orig:l||__ez.template.isOrig})}function g(c,d,e){var b=c.split('/'),f,g;__ez.dot.isDefined(c)&&b.length===3&&__ez.dot.isValid(d)&&(f=b[0],g=b[2],a.push({type:"impression",impression_id:g,domain_id:__ez.dot.getDID(),unit:f,t_epoch:__ez.dot.getEpoch(0),pageview_id:__ez.dot.getPageviewId(),data:__ez.dot.dataToStr(d),is_orig:e||__ez.template.isOrig}))}function b(){if(typeof document.visibilityState!='undefined'&&document.visibilityState==="prerender")return;if(__ez.dot.isDefined(a)&&a.length>0){var b=[a.filter(function(a){return a.is_orig}),a.filter(function(a){return!a.is_orig})];b.forEach(function(a){for(var d,b,e,c;a.length>0;)d=a[0].is_orig||!1,b=5,b>a.length&&(b=a.length),e=a.splice(0,b),c=__ez.dot.getURL(h)+"?orig="+(d===!0?1:0)+"&sts="+btoa(JSON.stringify(e)),typeof window.isAmp!='undefined'&&isAmp&&typeof window._ezaq!='undefined'&&_ezaq.hasOwnProperty("domain_id")&&(c+="&visit_uuid="+_ezaq.visit_uuid),__ez.dot.Fire(c)})}a=[]}function i(c){var a,b;if(typeof _ezim_d=="undefined")return!1;if(a=__ez.dot.getAdUnitPath(c).split('/').pop(),typeof _ezim_d=='object'&&_ezim_d.hasOwnProperty(a))return _ezim_d[a];for(b in _ezim_d)if(b.split('/').pop()===a)return _ezim_d[b];return!1}return{Add:c,AddAndFire:d,AddAndFireOrig:e,AddById:g,Fire:b,GetPixels:f}}()</script><link rel="preconnect" href="//cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="//blog.textcompare.org" crossorigin>
+    <link rel="preconnect" href="//textcompare.betteruptime.com" crossorigin>
+    <link rel="preconnect" href="//go.ezoic.net" crossorigin>
+    <title>Compare 2 PDF files & find Differences Online | TextCompare</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="author" content="textcompare.org">
+    <meta itemprop="datePublished" content="Fri Aug 20 2021 12:40:02 GMT+0000 (Coordinated Universal Time)">
+    <link rel="canonical" href="//www.textcompare.org/pdf/">
+    <meta name="image" content="https://www.textcompare.org/img/covers/compare-pdf.jpeg">
+    <meta property="og:image" content="https://www.textcompare.org/img/covers/compare-pdf.jpeg">
+    <meta name="description" content="Compare and find diff in two pdf files easily for free. Copy/paste data or upload files and then click on find diff button to get text diff.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Compare 2 PDF files & find Differences Online">
+    <meta property="og:url" content="https://www.textcompare.org/pdf/">
+    <meta property="og:site_name" content="TextCompare">
+    <meta property="og:description" content="Compare and find diff in two pdf files easily for free. Copy/paste data or upload files and then click on find diff button to get text diff.">
+    <meta property="og:locale" content="en_US">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@text_compare">
+    <meta property="twitter:creator" content="@text_compare">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" crossorigin="anonymous" media="print" onload="this.media='all',this.onload=null">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.5.207/web/pdf_viewer.min.css" media="print" onload="this.media='all',this.onload=null">
+    <link rel="stylesheet" href="/css/styles.css?ff=1&v=1&wps=true" media="print" onload="this.media='all',this.onload=null">
+    <script type="text/javascript">(function(c,a,d){(a[d]=a[d]||[]).push(function(){try{a.yaCounter48455426=new Ya.Metrika({id:48455426,clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0})}catch(a){}});var e=c.getElementsByTagName("script")[0],b=c.createElement("script"),f=function(){e.parentNode.insertBefore(b,e)};b.type="text/javascript",b.async=!0,b.src="https://mc.yandex.ru/metrika/watch.js",a.opera=="[object Opera]"?c.addEventListener("DOMContentLoaded",f,!1):f()})(document,window,"yandex_metrika_callbacks")</script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/48455426" style="position:absolute;left:-9999px" alt></div></noscript>
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "https://www.textcompare.org",
+          "name": "TextCompare",
+          "image": "https://www.textcompare.org/img/text-compare-online-free-diff-tool.jpg",
+          "description": "Text Compare is a 💯 free online diff tool to find difference between two files. Click 🔍 check to show all added ➕ text and removed ➖ text.",
+          "sameAs": [
+            "https://www.twitter.com/text_compare",
+            "https://www.facebook.com/textcompare",
+            "https://www.pinterest.com/textcompare"
+          ],
+          "inLanguage": [
+            "en",
+            "es",
+            "fr",
+            "zh"
+          ],
+          "copyrightYear": "2021",
+          "copyrightHolder": [{
+            "@type": "Organization",
+            "url": "https://www.textcompare.org",
+            "name": "Text Compare",
+            "logo": "https://www.textcompare.org/img/android-chrome-192x192.png",
+            "contactPoint": [{
+              "@type": "ContactPoint",
+              "url": "https://www.textcompare.org",
+              "email": "contact@textcompare.org",
+              "contactType": "customer service"
+            }]
+          }]
+        }
+    
+      </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "TextCompare",
+          "image": "https://www.textcompare.org/img/text-compare-online-free-diff-tool.jpg",
+          "description": "Text Compare is a 💯 free online diff tool to find difference between two files. Click 🔍 check to show all added ➕ text and removed ➖ text.",
+          "applicationCategory": "UtilitiesApplication",
+          "applicationSubCategory": "Text Utility",
+          "applicationSuite": "TextCompare",
+          "operatingSystem": "All",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.85",
+            "bestRating": "5",
+            "ratingCount": "9059"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD",
+            "description": "Free"
+          }
+        }
+    
+      </script>
+    <style>.hidden{display:none}</style>
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <meta name="theme-color" content="black">
+    <link rel="manifest" href="/manifest.json">
+    <script>'serviceWorker'in navigator&&navigator.serviceWorker.register('/sw.js',{scope:'./'});const API='https://www.textcompare.org/api/'</script>
+    <style>.ezoic-ad.box-2{border:none!important;display:inline-block;float:none!important;line-height:0;margin-bottom:15!important;margin-left:0!important;margin-right:0!important;margin-top:15!important;min-height:250px;min-width:300px;padding:0;text-align:center!important}.ezoic-ad.box-2{border:none!important;display:inline-block;float:none!important;line-height:0;margin-bottom:15!important;margin-left:0!important;margin-right:0!important;margin-top:15!important;min-height:250px;min-width:300px;padding:0;text-align:center!important}.ezoic-ad.box-2{border:none!important;display:inline-block;float:none!important;line-height:0;margin-bottom:15!important;margin-left:0!important;margin-right:0!important;margin-top:15!important;min-height:250px;min-width:300px;padding:0;text-align:center!important}.ezoic-ad.box-2101{background:0 0!important;display:flex!important;float:none!important;justify-content:space-between;line-height:0;margin-bottom:15!important;margin-left:auto!important;margin-right:auto!important;margin-top:15!important;min-width:970px;padding:0;text-align:center!important;width:970px}.ezoic-ad.box-4106{display:inline-block;float:none!important;line-height:0;margin-bottom:2px!important;margin-left:0!important;margin-right:0!important;margin-top:2px!important;min-height:90px;min-width:728px;padding:0}.ezoic-ad.medrectangle-1105{display:inline-block;float:none!important;line-height:0;margin-bottom:15px!important;margin-left:0!important;margin-right:0!important;margin-top:15px!important;min-height:250px;min-width:970px;padding:0}.ezoic-ad.medrectangle-2100{display:inline-block;float:none;line-height:0;min-height:90px;min-width:728px;padding:0}.ezoic-ad{display:inline-block;border:0}.ezoic-ad>div>iframe{margin:0!important;padding:0!important}.adtester-container-108,.adtester-container-109,.adtester-container-107,.adtester-container-111,.adtester-container-103,.adtester-container-104,.adtester-container-110,.adtester-container-102{display:none!important}.ezmob-footer{position:fixed;left:0;bottom:0;width:100%;background:#fff;z-index:100000;line-height:0}.ezmob-footer-desktop{background-color:rgba(255,255,255,.8);border-top:1px solid #d3d3d3;padding-top:5px}.ezmob-footer-close{cursor:pointer;color:#b2b2b2;border:1px solid #b2b2b2;border-radius:20px;background:#fff;line-height:20px;display:inline-block;font-size:20px;font-family:arial,sans-serif;padding:0 5px;position:absolute;top:5px;right:5px;height:24px;width:21px;text-align:center}body{padding-bottom:100px!important;height:auto}.ezmob-footer-close-mobile{display:none}</style><script type="text/javascript">var ezouid="1"</script><base href="https://www.textcompare.org/pdf/"><script type="text/javascript">var ezoTemplate='pub_site',ezouid,ezoFormfactor,ezo_elements_to_check;typeof ezouid=='undefined'&&(ezouid='none'),ezoFormfactor='1',ezo_elements_to_check=Array()</script>
+    <script data-ezscrex="false" type="text/javascript">var soc_app_id='0',did=200846,ezdomain='textcompare.org',ezoicSearchable=1</script>
+    <script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none" defer>__ez.queue.addFile('__ezf_ezosuigeneris','//g.ezoic.net/ezosuigeneris.js?i=29dc4d094028a1d280e48862bbaa2fb6',!0,["/detroitchicago/boise.js"],!0,!1,!1,!1)</script><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none" defer>__ez.queue.addFile('__ezf_ezosuigenerisc','//g.ezoic.net/ezosuigenerisc.js?nogen=1',!0,["/detroitchicago/boise.js"],!0,!1,!1,!1)</script>
+    <script data-ezscrex="false" data-pagespeed-no-defer data-cfasync="false">function create_ezolpl(b,c){var a=new Date,d;a.setTime(a.getTime()+365*24*60*60*1e3),d="expires="+a.toUTCString(),__ez.ck.setByCat("ezux_lpl_200846="+(new Date).getTime()+"|"+b+"|"+c+"; "+d,3)}function attach_ezolpl(a,b){var c,d;document.readyState==="complete"&&create_ezolpl(a,b),window.attachEvent?window.attachEvent("onload",create_ezolpl,a,b):window.onload?(c=window.onload,d=function(d){c(d),create_ezolpl(a,b)},window.onload=d):window.onload=create_ezolpl.bind(null,a,b)}__ez.queue.addFunc("attach_ezolpl","attach_ezolpl",["f0742981-fbda-49f6-5a2a-fa584d80830e","true"],!1,['/detroitchicago/boise.js'],!0,!1,!1,!1)</script>
+    <script type="text/javascript">var _audins_dom="textcompare_org",_audins_did=200846;__ez.queue.addFile('/detroitchicago/cmbv2.js','/detroitchicago/cmbv2.js?gcb=195-2&cb=04-1y02-4y06-12y07-1y19-5y0b-5y0d-14y13-3y17-4y1a-2y1f-3y32-22y51-1y55-21&cmbcb=20&sj=x04x02x06x07x19x0bx0dx13x17x1ax1fx32x51x55',!0,[],!0,!1,!0,!1)</script>
+    <script type="text/javascript" defer>__ez.queue.addFile('/detroitchicago/cmbdv2.js','/detroitchicago/cmbdv2.js?gcb=195-2&cb=03-4y0c-5y18-4y33-22y56-21&cmbcb=20&sj=x03x0cx18x33x56',!0,['/detroitchicago/cmbv2.js'],!0,!1,!0,!1)</script></head>
+    <body vocab="https://schema.org/" typeof="WebPage">
+    <meta property="url" content="https://www.textcompare.org">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="/">TextCompare.org</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <ul class="navbar-nav me-auto">
+    <li class="nav-item"><a class="nav-link" href="/excel/">Compare Excel</a></li>
+    <li class="nav-item"><a class="nav-link" href="/pdf/">Compare PDF</a></li>
+    <li class="nav-item"><a class="nav-link" href="/csv/">CSV Tools</a></li>
+    <li class="nav-item"><a class="nav-link" href="/text/">Text Tools</a></li>
+    <li class="nav-item"><a class="nav-link" href="/readability/">Readability Test</a></li>
+    </ul>
+    <ul class="navbar-nav d-flex" id="accountNav">
+    <li class="nav-item"><a class="nav-link" href="/login/" onclick="this.href=this.href+'?v='+Math.random()">Login</a></li>
+    <li class="nav-item"><a class="nav-link" href="/signup/" onclick="this.href=this.href+'?v='+Math.random()">Register</a></li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    <main class="container-fluid">
+    <span id="ezoic-pub-ad-placeholder-101"></span><span class="ezoic-ad box-2 box-2101 adtester-container adtester-container-101 ezoic-ad-adaptive" data-ez-name="textcompare_org-box-2"><span class="ezoic-ad box-2 box-2-multi-101 adtester-container adtester-container-101" data-ez-name="textcompare_org-box-2"><span id="div-gpt-ad-textcompare_org-box-2-0" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none">typeof __ez_fad_position!='undefined'&&__ez_fad_position('div-gpt-ad-textcompare_org-box-2-0')</script></span></span><span class="ezoic-ad box-2 box-2-multi-101 adtester-container adtester-container-101" data-ez-name="textcompare_org-box-2"><span id="div-gpt-ad-textcompare_org-box-2-0_1" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none">typeof __ez_fad_position!='undefined'&&__ez_fad_position('div-gpt-ad-textcompare_org-box-2-0_1')</script></span></span><span class="ezoic-ad box-2 box-2-multi-101 adtester-container adtester-container-101" data-ez-name="textcompare_org-box-2"><span id="div-gpt-ad-textcompare_org-box-2-0_2" ezaw="323" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:250px;min-width:323px" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none">typeof __ez_fad_position!='undefined'&&__ez_fad_position('div-gpt-ad-textcompare_org-box-2-0_2')</script></span></span><style>.box-2-multi-101{border:none!important;display:inline-block;float:none!important;line-height:0;margin-bottom:15!important;margin-left:0!important;margin-right:0!important;margin-top:15!important;min-height:250px;min-width:300px;padding:0;text-align:center!important}</style></span>
+    <div class="alert alert-warning diffload hidden">
+    <div class="spinner-border text-info spinner-border-sm" role="status"></div> Please wait while your saved file is
+    loaded.
+    </div>
+    <div class="hidden alert alert-danger diff">
+    🚫 Could not find diff with given id. Maybe it expired or id is incorrect.
+    </div>
+    <div class="hidden alert alert-success save">
+    📢 Your Diff has been saved. Your unique url is <a id="diffUrl" class="alert-link"></a>
+    </div>
+    <div class="row" id="pdf">
+    <div class="col">
+    <div class="text-center mt-3 mb-1 diffview hidden">
+    <button class="btn btn-warning left" id="fileviewbtn">↺ Change File</button>
+    <div class="btn-group" role="group" aria-label="Diff type view">
+    <input type="radio" class="btn-check" name="diffview" id="pdfdiffview" data-view="pdfmode" autocomplete="off" checked>
+    <label class="btn btn-outline-primary" for="pdfdiffview">📖 PDF View</label>
+    <input type="radio" class="btn-check" name="diffview" id="imgdiffview" data-view="imgmode" autocomplete="off">
+    <label class="btn btn-outline-primary" for="imgdiffview">📷 Image View</label>
+    <input type="radio" class="btn-check" name="diffview" id="detaildiffview" data-view="detailmode" autocomplete="off">
+    <label class="btn btn-outline-primary" for="detaildiffview">📂 File Details</label>
+    </div>
+    </div>
+    <div class="row diffviewwrap" id="pdfmode">
+    <div class="col-md-6 relative">
+    <div class="border synced bg-light" id="original">
+    <p class="text-info">Please choose a file.</p>
+    </div>
+    </div>
+    <div class="col-md-6 relative">
+    <div class="border synced bg-light" id="modified">
+    <p class="text-info">Please choose modified file to continue.</p>
+    </div>
+    </div>
+    <div class="col fileview">
+    <div class="row">
+    <div class="col-md-6">
+    <input type="file" name="file1" id="file1" class="input-control input-file">
+    <label for="file1" class="hidden">original file</label>
+    </div>
+    <div class="col-md-6">
+    <input type="file" name="file2" id="file2" class="input-control input-file">
+    <label for="file2" class="hidden">modified file</label>
+    </div>
+    <div class="col-md-12 text-center mt-3">
+    <button class="btn btn-lg btn-primary" id="compare" disabled>🔍 Find Difference</button>
+    </div>
+    </div>
+    </div>
+    <div class="row mt-3 diffview hidden">
+    <div class="col-md-3">
+    <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="checked" id="syncscroll" checked>
+    <label class="form-check-label" for="syncscroll">
+    Synced Scroll
+    </label>
+    </div>
+    </div>
+    <div class="col-md-3">
+    <p>
+    Removed: <span id="pdfremoved" class="text-danger">0</span>
+    Added: <span id="pdfadded" class="text-success">0</span>
+    </p>
+    </div>
+    <div class="col-md-6 text-center">
+    <button class="btn btn-info text-capitalize" id="exportoriginal" disabled>
+    Export Original PDF
+    </button>
+    <button class="btn btn-info text-capitalize" id="exportmodified" disabled>
+    Export Modified PDF
+    </button>
+    <select name="save" id="expiry" aria-label="Select data expiry"><option value="h">Save for an hour</option><option value="d">Save for a day</option><option value="w">Save for a week</option><option value="m">Save for a month</option><option value="y">Save for a year</option></select>
+    <button class="btn btn-dark" id="uploadDiff">🖧 Save Online</button>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-12 diffviewwrap hidden" id="imgmode">
+    <div class="row">
+    <div class="col-md-2"></div>
+    <div class="border text-center col-md-8 bg-light" id="imgdiff">
+    <p class="text-info"><span class="spinner-border spinner-border-sm text-primary" role="status"></span>Please
+    wait while requried
+    files are loaded and diff computed.</p>
+    </div>
+    </div>
+    <div class="row mt-3">
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+    <label for="imgdiffcolor">Diff Color</label>
+    <input type="color" name="imgdiffcolor" id="imgdiffcolor" value="#FF00FF">
+    <label class="d-inline-flex">Transparency
+    <input type="range" class="form-range ms-2" name="imgdiffopacity" id="imgdiffopacity" min="0" max="1" step="0.01" value="1">
+    </label>
+    </div>
+    <div class="col-md-5">
+    <div class="text-center">
+    <button class="btn btn-info" id="previmgdiff" title="Previous Difference">⬅ Prev Page</button>
+    <button class="btn btn-info" id="nextimgdiff" title="Next Difference">Next Page ➡</button>
+    </div>
+    <div class="row justify-content-center gap-1 mt-1">
+    <select class="form-select w-25" name="imgorgdiffpageno" id="imgorgdiffpageno" title="Choose Page Number for Original PDF"></select>
+    <select class="form-select w-25" name="imgmoddiffpageno" id="imgmoddiffpageno" title="Choose Page Number for Modified PDF"></select>
+    </div>
+    </div>
+    <div class="col-md-2">
+    <p><strong id="mismatch"></strong>% Different</p>
+    <a href="javascript:void(0)" class="btn btn-primary" id="exportimgdiff">💾 Export Page</a>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-12 diffviewwrap hidden" id="detailmode">
+    <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+    <table class="table table-striped table-bordered table-hover">
+    <thead class="table-dark">
+    <tr>
+    <th scope="col">Property</th>
+    <th scope="col">Original File</th>
+    <th scope="col">Modified File</th>
+    </tr>
+    </thead>
+    <tbody id="filedetaildiff"></tbody>
+    </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <details class="col-md-12 text-center mt-3">
+    <summary>Rate The Result</summary>
+    <p class="rating mb-0">
+    <input id="radio1" type="radio" name="rating" value="5">
+    <label for="radio1">★</label>
+    <input id="radio2" type="radio" name="rating" value="4">
+    <label for="radio2">★</label>
+    <input id="radio3" type="radio" name="rating" value="3">
+    <label for="radio3">★</label>
+    <input id="radio4" type="radio" name="rating" value="2">
+    <label for="radio4">★</label>
+    <input id="radio5" type="radio" name="rating" value="1">
+    <label for="radio5">★</label>
+    </p>
+    </details>
+    </div>
+    <div class="container-fluid">
+    <span id="ezoic-pub-ad-placeholder-106"></span><span class="ezoic-ad box-4 box-4106 adtester-container adtester-container-106" data-ez-name="textcompare_org-box-4"><span id="div-gpt-ad-textcompare_org-box-4-0" ezaw="580" ezah="400" style="position:relative;z-index:0;display:inline-block;padding:0;width:100%;max-width:1200px;margin-left:auto!important;margin-right:auto!important;min-height:90px;min-width:728px" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none">typeof __ez_fad_position!='undefined'&&__ez_fad_position('div-gpt-ad-textcompare_org-box-4-0')</script></span></span>
+    </div>
+    <div class="intro">
+    <h1 id="Free-Online-Tool-To-Compare-PDF-Documents-and-find-Differences" tabindex="-1">Free Online Tool To Compare PDF Documents and find Differences</h1>
+    <h2 id="How-to-use-this-Online-PDF-Diff-Tool-to-compare-2-files-for-changes%3F" tabindex="-1">How to use this Online PDF Diff Tool to compare 2 files for changes?</h2>
+    <ol>
+    <li>Choose 2 files you want to compare in left and right panes.</li>
+    <li>Once PDF files are parsed, <code>Compare</code> button will be enabled. Click on it to check diff.</li>
+    <li>By default PDF mode will be visible with deleted text highlighted in red color in left pane and inserted text highlighted in green color in right pane.</li>
+    <li>Image mode converts each page into an image and compares them.</li>
+    <li>File detail mode shows file metadata information like last modified date time, file size, number of pages, creator, PDF version etc.</li>
+    </ol>
+    <h2 id="How-does-the-PDF-comparison-works%3F" tabindex="-1">How does the PDF comparison works?</h2>
+    <ul>
+    <li>Once you choose your files, text content is extracted from each page.</li>
+    <li>After extraction, only text content is compared in PDF mode.</li>
+    <li>For the original file, deleted text is highlighted in red color annotation and for modified file, inserted text is highlighted with green color annotations.</li>
+    </ul>
+    <p>This is a web based tool, no software installtion required. It works on any modern browser like Firefox, Chrome, Edge etc on Windows, Mac or Linux based computer. Mobile Browsers like on Android or iPhone might have some problems with touch issues.</p>
+    <p><strong>All file processing and comparison is done in your browser itself. No file information or data is sent to our servers.</strong></p>
+    <h2 id="Where-it-doesn't-work%3F" tabindex="-1">Where it doesn't work?</h2>
+    <ul>
+    <li>Highlighted colors and text are not aligned correctly. <strong>Contact us with files/screenshots if they are off by large amount.</strong></li>
+    <li>It detect additions/removals at wrong places. Contact us with sample files.</li>
+    </ul>
+    <h3 id="Can-You-Compare-Word-and-PDF-documents%3F" tabindex="-1">Can You Compare Word and PDF documents?</h3>
+    <p>No, both files must be PDF files. We have separate <a href="/word/">tool to compare word documents</a>. You can always compare text content from pdf and word files manually by copy and pasting content. It supports most PDF versions based on Adobe format.</p>
+    <h2 id="Does-this-PDF-Compare-software-check-for-graphical-content-too%3F" tabindex="-1">Does this PDF Compare software check for graphical content too?</h2>
+    <p>Yes, sort of. Image mode converts each page to an image and then compares them. Right now, PDF mode only compares text content.</p>
+    <h2 id="It-doesn't-detect-any-text-from-my-pdf-file." tabindex="-1">It doesn't detect any text from my pdf file.</h2>
+    <p>This may be because your pdf has text as an image. You can use Image mode to compare the images. Otherwise, you'll need to use OCR software to extract text content in that case.</p>
+    <h2 id="How-Can-I-share-the-diff-result%3F" tabindex="-1">How Can I share the diff result?</h2>
+    <p>You can export PDF files and share files directly. Insertions/Deletions are added as green/red annotations which can viewed in any PDF viewer that supports annotations.</p>
+    <p>Image diff can also be exported.</p>
+    <p>Online sharing functionality is in roadmap rightnow.</p>
+    <h2 id="What-about-Privacy-of-my-documents-%3F" tabindex="-1">What about Privacy of my documents ?</h2>
+    <p>All the extraction and comparison happens on your browser itself. <strong>No data is saved on our server</strong> unless you explicitly choose to save for select time period. After that time period, all data is automatically deleted from our database.</p>
+    <p>You data will only be visible to people who have your unique URL.</p>
+    <h2 id="Can-you-compare-pdf-document-files-for-free%3F" tabindex="-1">Can you compare pdf document files for free?</h2>
+    <p>Yes, this PDF diff tool/software is <strong>absolutely FREE</strong>, there are no limits number of pages or size of document files you can compare. You are only limited by your browser resources limit.</p>
+    <p>Other softwares charge hefty amount just to compare two pdf files, we feel proud to do community service by making a free to use tool. We only ask you to share link to this software with friends/coworkers who might need a service like this.</p>
+    </div>
+    </main>
+    <span id="ezoic-pub-ad-placeholder-105"></span><span class="ezoic-ad medrectangle-1 medrectangle-1105 adtester-container adtester-container-105" data-ez-name="textcompare_org-medrectangle-1"><span id="div-gpt-ad-textcompare_org-medrectangle-1-0" ezaw="250" ezah="250" style="position:relative;z-index:0;display:inline-block;padding:0;width:100%;max-width:1200px;margin-left:auto!important;margin-right:auto!important;min-height:250px;min-width:970px" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none">typeof __ez_fad_position!='undefined'&&__ez_fad_position('div-gpt-ad-textcompare_org-medrectangle-1-0')</script></span><span style="width:250px;display:block;height:14px;margin:auto" class="reportline"><span style="text-align:center;font-size:smaller;float:left;line-height:normal"><a href="https://www.ezoic.com/what-is-ezoic/" target="_blank" rel="noopener noreferrer nofollow" style="cursor:pointer"><img src="https://go.ezoic.net/utilcave_com/img/ezoic.png" alt="Ezoic" loading="lazy" style="height:12px!important;padding:2px!important;border:0!important;cursor:pointer!important;width:58px!important;margin:0!important;box-sizing:content-box!important"></a></span><span class="ez-report-ad-button" name="?pageview_id=f0742981-fbda-49f6-5a2a-fa584d80830e&ad_position_id=105&impression_group_id=textcompare_org-medrectangle-1/2021-09-17/5025532058161313&ad_size=250x250&domain_id=200846&url=https://www.textcompare.org/pdf/" style="cursor:pointer!important;font-size:12px!important;color:#a5a5a5;float:right;text-decoration:none!important;font-family:arial!important;line-height:normal">report this ad</span></span></span>
+    <footer class="container-fluid">
+    <hr>
+    <details class="col-md-12" open>
+    <summary class="text-center">
+    <h3 class="ilb">TextCompare.org</h3>
+    </summary>
+    <hr>
+    <div class="row">
+    <div class="col-md-3">
+    <h4>Comparison Tools</h4>
+    <ul>
+    <li><a href="/">Text Diff</a></li>
+    <li><a href="/json/">JSON Diff</a></li>
+    <li><a href="/xml/">XML Diff</a></li>
+    <li><a href="/html/">HTML Diff</a></li>
+    <li><a href="/css/">CSS Diff</a></li>
+    <li><a href="/csv/compare.html">CSV Diff</a></li>
+    <li><a href="/excel/">Excel Diff</a></li>
+    <li><a href="/image/">Image Diff</a></li>
+    <li><a href="/ini/">Ini Diff</a></li>
+    <li><a href="/java/">Java Diff</a></li>
+    <li><a href="/javascript/">Javascript Diff</a></li>
+    <li><a href="/pdf/">PDF Diff</a></li>
+    <li><a href="/php/">PHP Diff</a></li>
+    <li><a href="/pug/">Pug Diff</a></li>
+    <li><a href="/python/">Python Diff</a></li>
+    <li><a href="/ruby/">Ruby Diff</a></li>
+    <li><a href="/sql/">SQL Diff</a></li>
+    <li><a href="/tcl/">TCL Diff</a></li>
+    <li><a href="/word/">Word Diff</a></li>
+    <li><a href="/yaml/">YAML Diff</a></li>
+    </ul>
+    <h4>JSON Tools</h4>
+    <ul>
+    <li><a href="/json/">JSON Diff</a></li>
+    <li><a href="/json/json-to-xml/">JSON to XML</a></li>
+    <li><a href="/json/json-to-csv/">JSON to CSV</a></li>
+    <li><a href="/json/json-to-yaml/">JSON to YAML</a></li>
+    <li><a href="/json/json-to-excel/">JSON to Excel</a></li>
+    <li><a href="/json/json-to-pdf/">JSON to PDF</a></li>
+    <li><a href="/json/json-to-html/">JSON to HTML</a></li>
+    <li><a href="/json/json-to-text/">JSON to Text</a></li>
+    <li><a href="/json/editor/">JSON Editor</a></li>
+    <li><a href="/json/stringify/">Stringify JSON</a></li>
+    <li><a href="/json/unstringify/">Unstringify JSON</a></li>
+    <li><a href="/json/escape/">Escape JSON</a></li>
+    <li><a href="/json/unescape/">Unescape JSON</a></li>
+    </ul>
+    <h4>HTML Tools</h4>
+    <ul>
+    <li><a href="/html/">HTML Diff</a></li>
+    <li><a href="/html/html-to-json/">HTML to JSON</a></li>
+    <li><a href="/html/html-to-csv/">HTML to CSV</a></li>
+    <li><a href="/html/html-to-yaml/">HTML to YAML</a></li>
+    <li><a href="/html/html-to-excel/">HTML to Excel</a></li>
+    <li><a href="/html/html-to-pdf/">HTML to PDF</a></li>
+    <li><a href="/html/html-to-xml/">HTML to XML</a></li>
+    <li><a href="/html/html-to-text/">HTML to Text</a></li>
+    <li><a href="/html/editor/">HTML Editor</a></li>
+    </ul>
+    </div>
+    <div class="col-md-3">
+    <h4>CSV Tools</h4>
+    <ul>
+    <li><a href="/csv/">CSV to Delimited</a></li>
+    <li><a href="/csv/csv-to-tsv/">CSV to TSV</a></li>
+    <li><a href="/csv/csv-to-sql/">CSV to SQL</a></li>
+    <li><a href="/csv/csv-to-geojson/">CSV to GeoJSON</a></li>
+    <li><a href="/csv/csv-to-json/">CSV to JSON</a></li>
+    <li><a href="/csv/csv-to-txt/">CSV to Text</a></li>
+    <li><a href="/csv/csv-to-html/">CSV to HTML</a></li>
+    <li><a href="/csv/csv-to-markdown/">CSV to Markdown</a></li>
+    <li><a href="/csv/csv-to-yaml/">CSV to YAML</a></li>
+    <li><a href="/csv/csv-to-xml/">CSV to XML</a></li>
+    <li><a href="/csv/csv-to-xlsx/">CSV to Excel</a></li>
+    <li><a href="/csv/csv-to-kml/">CSV to KML</a></li>
+    <li><a href="/csv/csv-to-pdf/">CSV to PDF</a></li>
+    <li><a href="/csv/csv-to-vcard/">CSV to vCard</a></li>
+    <li><a href="/csv/compare/">CSV Diff</a></li>
+    </ul>
+    <h4>YAML Tools</h4>
+    <ul>
+    <li><a href="/yaml/">YAML Diff</a></li>
+    <li><a href="/yaml/yaml-to-json/">YAML to JSON</a></li>
+    <li><a href="/yaml/yaml-to-csv/">YAML to CSV</a></li>
+    <li><a href="/yaml/yaml-to-xml/">YAML to XML</a></li>
+    <li><a href="/yaml/editor/">YAML Editor</a></li>
+    <li><a href="/yaml/yaml-to-html/">YAML to HTML</a></li>
+    <li><a href="/yaml/yaml-to-excel/">YAML to Excel</a></li>
+    </ul>
+    <h4>XML Tools</h4>
+    <ul>
+    <li><a href="/xml/">XML Diff</a></li>
+    <li><a href="/xml/xml-to-json/">XML to JSON</a></li>
+    <li><a href="/xml/xml-to-csv/">XML to CSV</a></li>
+    <li><a href="/xml/xml-to-yaml/">XML to YAML</a></li>
+    <li><a href="/xml/xml-to-excel/">XML to Excel</a></li>
+    <li><a href="/xml/xml-to-pdf/">XML to PDF</a></li>
+    <li><a href="/xml/xml-to-html/">XML to HTML</a></li>
+    <li><a href="/xml/xml-to-xsd/">XML to XSD</a></li>
+    <li><a href="/xml/xml-to-text/">XML to Text</a></li>
+    <li><a href="/xml/editor/">XML Editor</a></li>
+    </ul>
+    </div>
+    <div class="col-md-3">
+    <h4>Text Utilities</h4>
+    <ul>
+    <li><a href="/text/add-prefix-suffix/">Add Prefix or Suffix</a></li>
+    <li><a href="/text/remove-line-breaks-and-extra-spaces/">Remove Line Breaks & Spaces</a></li>
+    <li><a href="/text/flip-reverse/">Flip & Reverse Text</a></li>
+    <li><a href="/text/string-builder/">String Builder</a></li>
+    <li><a href="/text/encode-html/">Encode HTML</a></li>
+    <li><a href="/text/decode-html/">Decode HTML</a></li>
+    <li><a href="/text/encode-base64/">Encode Base64</a></li>
+    <li><a href="/text/decode-base64/">Decode Base64</a></li>
+    <li><a href="/text/encode-url/">Encode URL</a></li>
+    <li><a href="/text/decode-url/">Decode URL</a></li>
+    <li><a href="/text/string-to-hex/">String to Hex</a></li>
+    <li><a href="/text/hex-to-string/">Hex to String</a></li>
+    <li><a href="/text/string-to-binary/">String to Binary</a></li>
+    <li><a href="/text/binary-to-string/">Binary to String</a></li>
+    <li><a href="/text/case-converter/">Case Converter</a></li>
+    <li><a href="/text/remove-accents/">Remove Accents</a></li>
+    <li><a href="/text/remove-duplicate-lines/">Remove Duplicate Lines</a></li>
+    <li><a href="/text/remove-empty-lines/">Remove Empty Lines</a></li>
+    <li><a href="/text/remove-lines-containing/">Remove Lines Containing</a></li>
+    <li><a href="/text/sort-lines/">Sort Lines</a></li>
+    <li><a href="/text/find-and-replace-text/">Find & Replace</a></li>
+    <li><a href="/text/remove-punctuation/">Remove Punctuation</a></li>
+    <li><a href="/text/remove-duplicate-words/">Remove Duplicate Words</a></li>
+    <li><a href="/text/join-text/">Join Text</a></li>
+    <li><a href="/text/repeat-text/">Repeat Text</a></li>
+    <li><a href="/text/random-line-picker/">Pick Random Line</a></li>
+    <li><a href="/text/add-line-breaks/">Add Line Breaks</a></li>
+    <li><a href="/text/convert-text-to-morse-code/">Text to Morse</a></li>
+    <li><a href="/text/convert-morse-code-to-text/">Morse to Text</a></li>
+    <li><a href="/text/extract-text-from-html/">Extract Text from HTML</a></li>
+    <li><a href="/text/split-text/">Split Text</a></li>
+    <li><a href="/text/vertical-align/">Vertical Align Text</a></li>
+    <li><a href="/text/extract-regex-matches/">Extract Regex Matches</a></li>
+    <li><a href="/text/center-text/">Center Text</a></li>
+    <li><a href="/text/right-align/">Right Align Text</a></li>
+    <li><a href="/text/rotator/">Left/Right Text Rotate</a></li>
+    <li><a href="/text/check-palindrome/">Check Palindrome</a></li>
+    <li><a href="/text/convert-spaces-to-tabs/">Convert Spaces to Tabs</a></li>
+    <li><a href="/text/truncate/">Truncate Text</a></li>
+    <li><a href="/text/convert-text-to-image/">Text to Image</a></li>
+    <li><a href="/text/convert-text-to-pdf/">Text to PDF</a></li>
+    </ul>
+    </div>
+    <div class="col-md-3">
+    <h4>Readability Tools</h4>
+    <ul>
+    <li><a href="/readability/">Readability Scores</a></li>
+    <li><a href="/readability/automated-readability-index/">Automated Readability Index</a></li>
+    <li><a href="/readability/coleman-liau-index/">Coleman-Liau Index</a></li>
+    <li><a href="/readability/flesch-kincaid-reading-ease/">Flesch-Kincaid Reading Ease</a></li>
+    <li><a href="/readability/flesch-kincaid-grade-level/">Flesch-Kincaid Grade Level</a></li>
+    <li><a href="/readability/fry-readability-formula-graph/">Fry Readability Graph</a></li>
+    <li><a href="/readability/gunning-fog-score/">Gunning Fog Score</a></li>
+    <li><a href="/readability/new-dale-chall-score/">Dale-Chall Score</a></li>
+    <li><a href="/readability/raygor-estimate-graph/">Raygor Graph</a></li>
+    <li><a href="/readability/smog-index/">SMOG Index</a></li>
+    <li><a href="/readability/spache-readability-score/">Spache Score</a></li>
+    <li><a href="/readability/linsear-write/">Linsear Write Score</a></li>
+    <li><a href="/readability/filler-words/">Find Filler Words</a></li>
+    <li><a href="/readability/buzzwords/">Find Buzzwords</a></li>
+    <li><a href="/readability/weasel-words/">Find Weasel Words</a></li>
+    <li><a href="/readability/hedge-words/">Find Hedge Words</a></li>
+    <li><a href="/readability/stop-words/">Find Stop Words</a></li>
+    <li><a href="/readability/transition-words/">Find Transition Words</a></li>
+    <li><a href="/readability/cuss-words/">Find Cuss Words</a></li>
+    <li><a href="/readability/dolch-sight-words/">Find Dolch Sight Words</a></li>
+    <li><a href="/readability/fry-sight-words/">Find Fry Sight Words</a></li>
+    </ul>
+    <h4>Other Tools</h4>
+    <ul>
+    <li><a href="/cloze-test-maker/">Cloze Test Maker</a></li>
+    <li><a href="/crossword-maker">Crossword Maker</a></li>
+    <li><a href="/word-search-maker/">Word Search Maker</a></li>
+    <li><a href="/vectorize/">Image Vectorizer</a></li>
+    </ul>
+    <h4>vCard Tools</h4>
+    <ul>
+    <li><a href="/vcard/">vCard Splitter & Merger</a></li>
+    <li><a href="/vcard/vcf-to-csv/">vCard to CSV</a></li>
+    </ul>
+    <h4>Resources</h4>
+    <ul>
+    <li><a target="_blank" href="https://blog.textcompare.org/emojis/">Emoji List</a></li>
+    <li><a target="_blank" href="https://blog.textcompare.org/unicodes/">All Unicode Symbols List</a></li>
+    <li><a target="_blank" href="https://blog.textcompare.org/country/">Country Codes</a></li>
+    </ul>
+    </div>
+    </div>
+    </details>
+    <hr>
+    <div class="row">
+    <div class="col-md-4">
+    <p>© 2021 <a href="/">TextCompare.org</a></p>
+    </div>
+    <div class="col-md-3 text-center">
+    </div>
+    <div class="col-md-5 text-end">
+    <ul class="list-inline">
+    <li class="list-inline-item"><a target="_blank" href="https://blog.textcompare.org/">Blog</a></li>
+    <li class="list-inline-item"><a href="/contact/">Contact Us</a></li>
+    <li class="list-inline-item"><a href="/help/">Help</a></li>
+    <li class="list-inline-item"><a href="/terms/">Terms</a></li>
+    <li class="list-inline-item"><a href="/privacy/">Privacy</a></li>
+    <li class="list-inline-item"><a href="/about/">About</a></li>
+    <li class="list-inline-item"><a target="_blank" href="https://textcompare.betteruptime.com/">Status</a></li>
+    </ul>
+    </div>
+    </div>
+    <span id="ezoic-pub-ad-placeholder-102" class="ezoic-adpicker-ad"></span></footer>
+    <script src="https://cdn.jsdelivr.net/npm/stackdriver-errors-js@0.8.0/dist/stackdriver-errors-concat.min.js"></script>
+    <script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var a=new StackdriverErrorReporter;a.start({key:'AIzaSyC4XF9tl1k0aNrSyGJVX0u6pUqZFbfS9mI',projectId:'textcompareorg'})})</script>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.5.207/build/pdf.min.js"></script>
+    <script src="/js/dist/pdfdiff.bundle.js?v=11"></script>
+    <script>var language=''</script>
+    <script src="/js/script.js?v=8" defer></script>
+    <div class="ezmob-footer ezoic-floating-bottom ezo_ad ezmob-footer-desktop" id="ezmobfooter"><center><span id="ezoic-pub-ad-placeholder-100"></span><div class="ezmob-footer ezoic-floating-bottom ezo_ad ezmob-footer-desktop" id="ezmobfooter"><center><span class="ezoic-ad medrectangle-2 medrectangle-2100 adtester-container adtester-container-100" data-ez-name="textcompare_org-medrectangle-2"><span id="div-gpt-ad-textcompare_org-medrectangle-2-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:inline-block;padding:0;min-height:90px;min-width:728px" class="ezoic-ad"><script data-ezscrex="false" data-cfasync="false" type="text/javascript" style="display:none">typeof __ez_fad_position!='undefined'&&__ez_fad_position('div-gpt-ad-textcompare_org-medrectangle-2-0')</script></span></span></center><span class="ezmob-footer-close" onclick="document.getElementById('ezmobfooter').style.display='none'">x</span></div></center><span class="ezmob-footer-close" onclick="document.getElementById('ezmobfooter').style.display='none'">x</span></div><script>var epbjs,__enableAnalytics,__s2sbidders,__allBidders;function __ez_fad_ezpbinit(){var a=document.createElement('script');a.setAttribute('src','//go.ezodn.com/hb/dall.js?b=appnexus,ix,medianet,oftmedia,onetag,openx,pubmatic,pubmatic,pulsepoint,spotx&cb=195-2-27'),document.body.appendChild(a)}epbjs=epbjs||{},epbjs.que=epbjs.que||[],epbjs.bidderTimeout=2e3,epbjs.useAdj=!0,epbjs.SS={appnexus:10087,ix:10082,medianet:11307,oftmedia:10081,onetag:11291,openx:10015,pubmatic:10061,pulsepoint:11301,spotx:11304},epbjs.bidders=['appnexus,ix,medianet,oftmedia,onetag,openx,pubmatic,pubmatic,pulsepoint,spotx'],epbjs.que.push(function(){epbjs.aliasBidder('appnexus','oftmedia')}),epbjs.bidderSettings={openx:{bidCpmAdjustment:function(a){var b=a*1,c=b*1;return c}},oftmedia:{bidCpmAdjustment:function(a){var b=a*.85,c=b*1;return c}},ix:{bidCpmAdjustment:function(a){var b=a*1,c=b*1;return c}},pubmatic:{bidCpmAdjustment:function(a){var b=a*1,c=b*1;return c}},pubmatic:{bidCpmAdjustment:function(a){var b=a*1,c=b*1;return c}},appnexus:{bidCpmAdjustment:function(a){var b=a*1,c=b*1;return c}},pulsepoint:{bidCpmAdjustment:function(a){var b=a*1,c=b*1;return c}},medianet:{bidCpmAdjustment:function(a){var b=a*1,c=b*1;return c}},spotx:{bidCpmAdjustment:function(a){var b=a*.56,c=b*1;return c}},onetag:{bidCpmAdjustment:function(a){var b=a*1,c=b*1;return c}}},epbjs.gadj=1,__enableAnalytics=!1,__s2sbidders=['onetag'],__allBidders=['openx','oftmedia','ix','pubmatic','pubmatic','appnexus','pulsepoint','medianet','spotx','onetag'],__ez.queue.addFile('/detroitchicago/houston.js','/detroitchicago/houston.js?gcb=2&cb=4',!1,[],!0,!1,!0,!1),__ez.queue.addFunc("epbjsRequestAdUnits","epbjsRequestAdUnits",[[{code:'div-gpt-ad-textcompare_org-box-2-0',mediaTypes:{banner:{sizes:[[300,250]]}},bids:[{bidder:'openx',params:{delDomain:'ezoic-d.openx.net',unit:'538151781'}},{bidder:'oftmedia',params:{placementId:'19594005',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'ix',params:{siteId:'305137',size:[300,250]}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_top_of_page_300x250'}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_top_of_page_300x250'}},{bidder:'appnexus',params:{placementId:'21763602',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'pulsepoint',params:{cf:'300x250',cp:'562406',ct:'719185'}},{bidder:'medianet',params:{cid:'8CUBCB617',crid:'188911743'}}],sizeMapping:[{minWidth:300,sizes:[[300,250]]}]},{code:'div-gpt-ad-textcompare_org-box-2-0_1',mediaTypes:{banner:{sizes:[[300,250]]}},bids:[{bidder:'openx',params:{delDomain:'ezoic-d.openx.net',unit:'538151781'}},{bidder:'oftmedia',params:{placementId:'19594005',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'ix',params:{siteId:'305137',size:[300,250]}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_top_of_page_300x250'}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_top_of_page_300x250'}},{bidder:'appnexus',params:{placementId:'21763602',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'pulsepoint',params:{cf:'300x250',cp:'562406',ct:'719185'}},{bidder:'medianet',params:{cid:'8CUBCB617',crid:'188911743'}}],sizeMapping:[{minWidth:300,sizes:[[300,250]]}]},{code:'div-gpt-ad-textcompare_org-box-2-0_2',mediaTypes:{banner:{sizes:[[300,250]]}},bids:[{bidder:'openx',params:{delDomain:'ezoic-d.openx.net',unit:'538151781'}},{bidder:'oftmedia',params:{placementId:'19594005',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'ix',params:{siteId:'305137',size:[300,250]}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_top_of_page_300x250'}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_top_of_page_300x250'}},{bidder:'appnexus',params:{placementId:'21763602',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'pulsepoint',params:{cp:'562406',ct:'719185',cf:'300x250'}},{bidder:'medianet',params:{cid:'8CUBCB617',crid:'188911743'}}],sizeMapping:[{minWidth:300,sizes:[[300,250]]}]},{code:'div-gpt-ad-textcompare_org-medrectangle-2-0',mediaTypes:{banner:{sizes:[[728,90]]}},bids:[{bidder:'openx',params:{delDomain:'ezoic-d.openx.net',unit:'538151782'}},{bidder:'ix',params:{siteId:'305141',size:[728,90]}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_bottom_floating_728x90'}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_bottom_floating_728x90'}},{bidder:'appnexus',params:{placementId:'21763602',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'pulsepoint',params:{cf:'728x90',cp:'562406',ct:'719177'}},{bidder:'medianet',params:{cid:'8CUBCB617',crid:'188911743'}}]},{code:'div-gpt-ad-textcompare_org-box-4-0',mediaTypes:{banner:{sizes:[[300,250],[580,400],[336,280]]}},bids:[{bidder:'openx',params:{delDomain:'ezoic-d.openx.net',unit:'538151781'}},{bidder:'oftmedia',params:{placementId:'19594020',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'ix',params:{siteId:'305139',size:[300,250]}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_mid_content_300x250'}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_mid_content_300x250'}},{bidder:'appnexus',params:{placementId:'21763602',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'pulsepoint',params:{ct:'719185',cf:'300x250',cp:'562406'}},{bidder:'medianet',params:{cid:'8CUBCB617',crid:'188911743'}}]},{code:'div-gpt-ad-textcompare_org-medrectangle-1-0',mediaTypes:{banner:{sizes:[[250,250]]}},bids:[{bidder:'oftmedia',params:{placementId:'19594037',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_bottom_of_page_250x250'}},{bidder:'pubmatic',params:{publisherId:'156983',adSlot:'e_bottom_of_page_250x250'}},{bidder:'appnexus',params:{placementId:'21763602',video:{skippable:!0,playback_method:['auto_play_sound_off']}}},{bidder:'pulsepoint',params:{cp:'562406',ct:'719184',cf:'250x250'}},{bidder:'medianet',params:{crid:'188911743',cid:'8CUBCB617'}}]}]],!1,['/detroitchicago/houston.js'],!0,!0,!0,!0)</script>
+    <script>var __ez_tkn_evnt=function(){typeof _ezaq!='undefined'&&typeof window.ezogtk!="undefined"&&window.ezogtk!==""&&__ez.bit.AddAndFire(_ezaq.page_view_id,[new __ezDotData("ext_user_hash",window.ezogtk)])};document.addEventListener("DOMContentLoaded",__ez.queue.addFunc("__ez_tkn_evnt","__ez_tkn_evnt",event,!1,['/detroitchicago/minneapolis.js','/detroitchicago/memphis.js'],!0,!0,!1,!0))</script>
+    <script async data-ezscrex="false">__ez_fad_load(0,0),__ez_fad_doc_ht=__ez_fad_docht(),__ez_fad_vp_ht=__ez_fad_vpht();function __ez_fad_scroll(){return window.pageYOffset||(document.documentElement||document.body.parentNode||document.body).scrollTop}var __ez_fad_scrollint=setInterval(function(){var a=__ez_fad_scroll(),d=__ez_fad_doc_ht<=__ez_fad_vh+100,e=__ez_fad_vp_ht+a,f=e+__ez_fad_vp_ht,b,c;for(b in __ez_fad_divpos){if(__ez_fad_fastdiv.indexOf(b)!=-1)continue;c=__ez_fad_divpos[b],c>0&&c>a&&c<a+200?typeof __ez_fad_instaslots[b]=='function'&&__ez_fad_instaslots[b]():c>0&&c>a&&c<a+600&&typeof __ez_fad_instaslots[b]=='function'&&__ez_fad_viewslots[b]()}__ez_fad_chkpos(),ezslit_run[0]!==!0&&__ez_fad_load(0,0),(a>0||d)&&ezslit_run[1]!=!0&&(__ez_fad_load(1,null),__ez_fad_load(5,null)),(a>100||d)&&ezslit_run[2]!=!0&&__ez_fad_load(2,null),a>__ez_fad_vp_ht*.75&&ezslit_run[3]!=!0&&__ez_fad_load(3,null),document.readyState==="complete"&&!__ez_fad_floatshowd&&typeof __ez_fad_floating!='undefined'&&__ez_fad_floating.length>0&&__ez_fad_count===0&&googletag.cmd.push(__ez_fad_floatshow),ezslit_run[1]==!0&&ezslit_run[2]==!0&&ezslit_run[3]==!0&&clearInterval(__ez_fad_scrollint)},500);function __ez_fad_chkpos(){var a,b;if(typeof __ez_fad_divs[4]!='undefined')for(a=0;a<__ez_fad_divs[4].length;a++)b=__ez_fad_divs[4][a],__ez_fad_divs[4][a]=null,__ez_fad_position([b])}</script>
+    <script type="text/javascript">(function(b,a){function c(a,b,c){a.addEventListener?a.addEventListener(b,c):a.attachEvent("on"+b,function(){c.call(a)})}function e(b){b&&("string"==typeof b.class&&b.class&&a.getElementById("uglipop_popbox").setAttribute("class",b.class),b.keepLayout&&!b.class&&a.getElementById("uglipop_popbox").setAttribute("style","position:relative;height:300px;width:300px;background-color:white;opacity:1;"),"string"==typeof b.content&&b.content&&"html"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=b.content),"string"==typeof b.content&&b.content&&"div"==b.source&&(a.getElementById("uglipop_popbox").innerHTML=a.getElementById(b.content).innerHTML)),a.getElementById("uglipop_overlay_wrapper").style.display="",a.getElementById("uglipop_overlay").style.display="",a.getElementById("uglipop_content_fixed").style.display=""}function d(){a.getElementById("uglipop_overlay_wrapper").style.display="none",a.getElementById("uglipop_overlay").style.display="none",a.getElementById("uglipop_content_fixed").style.display="none"}c(a,"DOMContentLoaded",function(){var h=a.createElement("div"),g=a.createElement("div"),i=a.createElement("div"),f=a.createElement("div");g.id="uglipop_content_fixed",g.setAttribute("style","position:fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);opacity:1;z-index:10000000;"),i.id="uglipop_popbox",f.id="uglipop_overlay_wrapper",f.setAttribute("style","position:absolute;top:0;bottom:0;left:0;right:0;display:none"),h.id="uglipop_overlay",h.setAttribute("style","position:fixed;top:0;bottom:0;left:0;right:0;opacity:0.3;width:100%;height:100%;background-color:black;"),f.appendChild(h),g.appendChild(i),a.body.appendChild(f),a.body.appendChild(g),a.getElementById("uglipop_overlay_wrapper").style.display="none",a.getElementById("uglipop_overlay").style.display="none",a.getElementById("uglipop_content_fixed").style.display="none",f.addEventListener("click",d),c(b,"keydown",function(a){27==a.keyCode&&d()}),b.uglipop=e})})(window,document);var ezRBA=function(){function a(){for(var b=document.querySelectorAll('.ez-report-ad-button'),a=0;a<b.length;a++)b[a].addEventListener('click',function(a){var b='<iframe src="https://svc.ezoic.com/pub/reportads/reportads.html'+a.target.getAttribute('name')+'" width="400" height="500" style="border-radius: 10px; box-shadow: 2px 2px 30px 6px rgba(0,0,0,0.75); border: 1px solid black;"></iframe>';uglipop({class:'none',source:'html',content:b})});function c(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent('on'+b,c)}c(window,'message',function(a){a.data==='close-report-ad-modal'&&(document.getElementById('uglipop_overlay_wrapper').style.display='none',document.getElementById('uglipop_overlay').style.display='none',document.getElementById('uglipop_content_fixed').style.display='none')})}return{init:a}}();ezRBA.init()</script>
+    <script type="text/javascript" data-cfasync="false">(function(){var a=function(e,c){for(var b=0,a,d;b<c.length;b++)a=c[b],(a.complete==!1||typeof a.readyState!='undefined'&&a.readyState<4)&&(d=a.getAttribute('src')||a.currentSrc,typeof a.readyState!='undefined'&&a.readyState==0?a.addEventListener('loadstart',function(a){var b=a.currentTarget.getAttribute('src')||a.currentSrc;window.ezorqs(a,b)}):(d=a.getAttribute('src')||a.currentSrc,window.ezorqs(a,d)),a.addEventListener('load',function(a){var b=a.currentTarget.getAttribute('src')||a.srcElement.currentSrc;window.ezorqe(a,b)}),a.addEventListener('loadeddata',function(a){var b=a.currentTarget.getAttribute('src')||a.srcElement.currentSrc;window.ezorqe(a,b)}),a.addEventListener('error',function(a){var b=a.currentTarget.getAttribute('src')||a.srcElement.currentSrc;window.ezorqe(a,b)}))},b=function(d){for(var b=0,a,e;b<d.length;b++)a=d[b],(a.getAttribute('rel')=='preload'||a.getAttribute('rel')=='stylesheet')&&a.getAttribute('href')!=null&&c(a.getAttribute('href'))&&(window.ezorqs(a,a.getAttribute('href')),e=document.createElement('img'),e.onerror=function(b){typeof b.path!="undefined"&&typeof b.path[0].currentSrc!="undefined"?window.ezorqe(a,b.path[0].currentSrc):typeof b.srcElement!="undefined"&&typeof b.srcElement.href!="undefined"&&window.ezorqe(a,b.srcElement.href)},e.src=a.getAttribute('href'))};function c(b){for(var a=0;a<document.styleSheets.length;a++)if(document.styleSheets[a].href==b)return!0;return!1}__ez_addAllListeners=function(){a('img',document.querySelectorAll('img')),a('video',document.querySelectorAll('video')),a('audio',document.querySelectorAll('audio')),b(document.querySelectorAll('link')),typeof window.__ez.ssaf!="undefined"&&window.__ez.ssaf.indexOf(16)>-1&&typeof window.__ez.sshsdef!="undefined"&&window.__ez.sshsdef===!1&&Element.prototype.addEventListener&&(typeof window.onload=="function"&&(window.addEventListener("load",window.onload),window.onload=null),typeof document.onload=="function"&&(document.addEventListener.addEventListener("load",document.onload),document.onload=null))},__ez.queue.addFunc("__ez_addAllListeners","__ez_addAllListeners",null,!1,['/detroitchicago/tulsa.js'],!0,!0,!0,!0)})()</script>
+    <script data-ezscrex="false" data-pagespeed-no-defer data-cfasync="false" type="text/javascript" style="display:none">__ez_func_ezosuigeneris=function(){if(typeof ezosuigeneris!="undefined"){var a=new Date;a.setMonth(a.getMonth()+24),__ez.ck.setByCat("ezosuigeneris="+window.ezosuigeneris+";expires="+a.toUTCString()+";domain="+window.ezdomain+";path=/",3)}},__ez.queue.addFunc('__ez_func_ezosuigeneris','__ez_func_ezosuigeneris',null,!1,['__ezf_ezosuigeneris','/detroitchicago/boise.js'],!0,!1,!1,!1)</script>
+    <script type="text/javascript" style="display:none">var __ez_dims=function(){var d=function(b,c,a){return document.cookie=b+'='+c+(a?';expires='+new Date(Math.floor((new Date).getTime()+a*1e3)).toUTCString():'')+';path=/'},c=1,a=window.screen.height,b=window.screen.width,e=c===1?a:a>b?a:b,f=c===1?b:a>b?b:a,g=window.innerHeight||document.documentElement.clientHeight||document.getElementsByTagName('body')[0].clientHeight,h=window.innerWidth||document.documentElement.clientWidth||document.getElementsByTagName('body')[0].clientWidth;d('ezds',encodeURIComponent('ffid='+c+',w='+f+',h='+e),31536e3*7),d('ezohw',encodeURIComponent('w='+h+',h='+g),31536e3*7)}()</script><script type="text/javascript" style="display:none" async></script>
+    </body></html>
